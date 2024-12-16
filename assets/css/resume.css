@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #1875FF;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1875FF;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.job .date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+    display: block;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.education-item {
+    margin-bottom: 15px;
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.education-item .date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+.references p {
+    margin: 0;
+}
+
+/* Style for the Back button */
+.back-button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #1875FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #0056cc;
+}
+
