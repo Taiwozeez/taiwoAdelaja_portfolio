@@ -55,6 +55,18 @@ header h1 {
 header p {
     font-size: 16px;
     opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.7);
+    transition: border-bottom 0.2s ease;
+}
+
+header a:hover {
+    border-bottom: 1px solid white;
 }
 
 .section-title {
@@ -173,6 +185,34 @@ ul li::before {
     font-weight: 500;
 }
 
+.project-item {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background-color: var(--section-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.project-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.certifications ul {
+    padding: 15px 20px;
+    background-color: var(--section-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
 .references {
     text-align: center;
     padding: 15px;
@@ -242,7 +282,7 @@ ul li::before {
         font-size: 26px;
     }
     
-    .job, .education-item {
+    .job, .education-item, .project-item {
         padding: 15px;
     }
 }
@@ -264,7 +304,7 @@ ul li::before {
         font-size: 20px;
     }
     
-    .job h3, .education-item h3 {
+    .job h3, .education-item h3, .project-item h3 {
         font-size: 16px;
     }
 }
