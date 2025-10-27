@@ -6,60 +6,8 @@
   <title>ADELAJA Hazeez Taiwo - Resume</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/resume.css">
-
-  <style>
-    /* Force A4 PDF Print Size */
-    @page {
-      size: A4;
-      margin: 0;
-    }
-
-    body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-    }
-
-    main {
-      width: 210mm;
-      min-height: 297mm;
-      margin: auto;
-      padding: 20mm;
-      background: #fff;
-      box-sizing: border-box;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header button {
-      background: #000;
-      color: #fff;
-      padding: 8px 12px;
-      cursor: pointer;
-      border: none;
-      border-radius: 6px;
-    }
-
-    /* Hide button when printing */
-    @media print {
-      header button {
-        display: none;
-      }
-      body {
-        background: #fff !important;
-      }
-      main {
-        box-shadow: none !important;
-      }
-    }
-  </style>
-
 </head>
+
 <body>
 
 <main id="cv-content">
@@ -68,16 +16,14 @@
     <button onclick="downloadPDF()">Download PDF</button>
   </header>
 
-  <div>
+  <div class="cv-body">
     <aside>
       <section>
         <h2>Details</h2>
-        <div>
-          <p><strong>Address:</strong> 20, Rafiu Tijani Street, Iyana Ejigbo, Lagos, Nigeria</p>
-          <p><strong>Phone:</strong> 08060536025</p>
-          <p><strong>Email:</strong> walejay4real3000@gmail.com</p>
-          <p><strong>Nationality:</strong> Nigerian</p>
-        </div>
+        <p><strong>Address:</strong> 20, Rafiu Tijani Street, Iyana Ejigbo, Lagos, Nigeria</p>
+        <p><strong>Phone:</strong> 08060536025</p>
+        <p><strong>Email:</strong> walejay4real3000@gmail.com</p>
+        <p><strong>Nationality:</strong> Nigerian</p>
       </section>
 
       <section>
@@ -88,8 +34,8 @@
           <li>Active Learning</li>
           <li>Negotiation</li>
           <li>Customer Relationship Management</li>
-          <li>Good communication and interpersonal skills</li>
-          <li>Effective Time Management</li>
+          <li>Communication Skills</li>
+          <li>Time Management</li>
           <li>Conflict Resolution</li>
           <li>Decision Making</li>
           <li>Flexibility</li>
@@ -108,43 +54,32 @@
       </section>
     </aside>
 
-    <div id="right-content">
+    <div class="right-content">
       <section>
         <h2>Profile</h2>
         <p>
-          Experienced customer–oriented professional with strong multitasking skills
-          and ability to efficiently prioritize tasks. Passionate about building strong
-          customer relationships, driving brand loyalty and increasing customer engagement.
+          Experienced customer-oriented professional with strong multitasking ability and a passion
+          for driving customer satisfaction and brand loyalty.
         </p>
       </section>
 
       <section>
         <h2>Employment History</h2>
 
-        <div>
-          <h3>Collection Officer, XGO Finance Limited (Xcredit)</h3>
-          <span>Aug 2020 — Present</span>
-        </div>
+        <h3>Collection Officer, XGO Finance Limited (Xcredit)</h3>
+        <span>Aug 2020 — Present</span>
 
-        <div>
-          <h3>Collection Officer, Blue Ridge Microfinance Bank (OKASH)</h3>
-          <span>Jan 2020 — Jun 2020</span>
-        </div>
+        <h3>Collection Officer, Blue Ridge Microfinance Bank (OKASH)</h3>
+        <span>Jan 2020 — Jun 2020</span>
 
-        <div>
-          <h3>Teacher (NYSC), Giver's International School, Ikang Bakassi</h3>
-          <span>Oct 2018 — Oct 2019</span>
-        </div>
+        <h3>Teacher (NYSC), Giver's International School, Ikang Bakassi</h3>
+        <span>Oct 2018 — Oct 2019</span>
 
-        <div>
-          <h3>Cashier, Fast Ark Company</h3>
-          <span>Jan 2016 — Aug 2016</span>
-        </div>
+        <h3>Cashier, Fast Ark Company</h3>
+        <span>Jan 2016 — Aug 2016</span>
 
-        <div>
-          <h3>Barman, Super Park Hotel and Suite</h3>
-          <span>Feb 2015 — Nov 2015</span>
-        </div>
+        <h3>Barman, Super Park Hotel and Suite</h3>
+        <span>Feb 2015 — Nov 2015</span>
       </section>
 
       <section>
@@ -162,7 +97,7 @@
 
       <section>
         <h2>References</h2>
-        <p>Available on request</p>
+        <p>Available upon request</p>
       </section>
 
     </div>
