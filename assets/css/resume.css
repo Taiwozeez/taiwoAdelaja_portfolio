@@ -1,137 +1,177 @@
+/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, serif;
 }
 
-main {
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
   background: #fff;
-  width: 900px;
-  margin: auto;
-  min-height: 100vh;
-  padding-bottom: 3rem;
 }
 
-header {
-  text-align: center;
-  padding: 2rem 0 1rem;
-  position: relative;
-}
-
-.name-box {
-  border: 2px solid #111;
-  display: inline-block;
-  padding: 1rem 4rem;
-  margin-bottom: 1rem;
-}
-
-h1 {
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-}
-
-/* Layout content */
 #cv-content {
-  display: flex;
-  border-top: 1px solid #ccc;
+  width: 210mm;
+  min-height: 297mm;
+  margin: auto;
+  background: #ffffff;
+  padding: 0;
 }
 
-aside {
-  width: 260px;
-  padding: 2rem;
-  border-right: 1px solid #ccc;
-  background: #f7f7f7;
+/* HEADER */
+header {
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #000;
 }
 
-/* Sidebar titles */
-aside h2 {
-  font-size: 0.75rem;
-  margin-bottom: 1rem;
-  color: #000;
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  border: 2px solid #000;
+  display: inline-block;
+  padding: 15px 30px;
 }
 
-.info-item {
-  margin-bottom: 1.3rem;
-}
-
-.info-item p {
-  font-size: 0.7rem;
-  font-weight: bold;
-  color: #000;
-}
-
-.info-item span {
-  font-size: 0.75rem;
-  margin-top: .3rem;
-  display: block;
-}
-
-ul {
-  padding-left: 1rem;
-  font-size: 0.75rem;
-}
-
-ul li {
-  margin-bottom: .3rem;
-}
-
-/* Right side */
-#right-content {
-  flex: 1;
-  padding: 2rem 2.5rem;
-}
-
-section.right-block {
-  margin-bottom: 1.8rem;
-}
-
-h2 {
-  font-size: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.job, .edu, .lead-block {
-  margin-bottom: 1.2rem;
-}
-
-h3 {
-  font-size: 0.85rem;
-  margin-bottom: .3rem;
-}
-
-.job span, .edu span {
-  font-size: 0.7rem;
-  float: right;
-  color: #333;
-}
-
-p {
-  font-size: 0.78rem;
-  line-height: 1.2rem;
-  margin-bottom: .4rem;
-}
-
-/* Button */
-button {
+header button {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
-  background: black;
-  color: white;
+  top: 20px;
+  right: 30px;
+  padding: 8px 18px;
+  background: #000;
+  color: #fff;
   border: none;
-  padding: .6rem 1rem;
-  border-radius: 4px;
+  font-size: 13px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-button:hover {
-  background: #444;
+header button:hover {
+  background: #333;
 }
 
-/* Print formatting */
+/* LAYOUT */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* SIDEBAR */
+aside {
+  width: 32%;
+  padding: 25px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.section-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.detail-block {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.value {
+  font-size: 11px;
+  line-height: 1.3rem;
+}
+
+aside .list li {
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+/* RIGHT CONTENT */
+.content {
+  width: 68%;
+  padding: 25px 35px;
+}
+
+.line {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #000;
+}
+
+.text {
+  font-size: 11px;
+  line-height: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.job,
+.edu {
+  margin-bottom: 14px;
+}
+
+.job-header,
+.edu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.job-header h3,
+.edu h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.meta {
+  font-size: 10px;
+  text-align: right;
+  min-width: 85px;
+  color: #000;
+  line-height: 1.2rem;
+}
+
+.loc {
+  font-size: 10px;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 6px 0;
+}
+
+.list.text li {
+  margin-bottom: 6px;
+  font-size: 11px;
+}
+
+/* PRINT LAYOUT FOR PDF */
 @media print {
-  button {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+
+  #cv-content {
+    margin: 0;
+    width: 100%;
+    min-height: auto;
+  }
+
+  header button {
     display: none;
+  }
+
+  .container {
+    page-break-inside: avoid;
   }
 }
