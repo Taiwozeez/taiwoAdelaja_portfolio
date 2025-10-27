@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADELAJA Hazeez Taiwo - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/resume.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adewale Isreal Jayeola - CV</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
 <main>
   <header>
-    <h1>ADEWALE ISREAL JAYEOLA</h1>
-    <button onclick="downloadPDF()">Download PDF</button>
+    <div class="name-box">
+      <h1>ADEWALE ISREAL</h1>
+      <h1>JAYEOLA</h1>
+    </div>
+    <button id="downloadBtn">Download PDF</button>
   </header>
 
   <div id="cv-content">
-    
     <aside>
       <!-- Details -->
       <section>
-        <h2>Details</h2>
-        <div>
-          <div>
-            <p>Address</p>
-            <p>20, Rafiu Tijani Street, Iyana Ejigbo, Lagos, Nigeria</p>
-          </div>
-          <div>
-            <p>Phone</p>
-            <p>08060536025</p>
-          </div>
-          <div>
-            <p>Email</p>
-            <p>walejay4real3000@gmail.com</p>
-          </div>
-            <div>
-            <p>Nationality</p>
-            <p>Nigerian</p>
-          </div>
+        <h2>DETAILS</h2>
+        <div class="info-item">
+          <p>ADDRESS</p>
+          <span>20, Rafiu Tijani Street Iyana Ejigbo<br>Lagos<br>Nigeria</span>
+        </div>
+        <div class="info-item">
+          <p>PHONE</p>
+          <span>08060536025</span>
+        </div>
+        <div class="info-item">
+          <p>EMAIL</p>
+          <span>walejay4real3000@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <p>NATIONALITY</p>
+          <span>Nigerian</span>
         </div>
       </section>
 
       <!-- Skills -->
       <section>
-        <h2>Skills</h2>
+        <h2>SKILLS</h2>
         <ul>
           <li>Good team player</li>
           <li>Listening Skills</li>
@@ -63,7 +61,7 @@
 
       <!-- Hobbies -->
       <section>
-        <h2>Hobbies</h2>
+        <h2>HOBBIES</h2>
         <ul>
           <li>Singing</li>
           <li>Reading</li>
@@ -73,29 +71,29 @@
     </aside>
 
     <div id="right-content">
+
       <!-- Profile -->
-      <section>
-        <h2>Profile</h2>
+      <section class="right-block">
+        <h2>PROFILE</h2>
         <p>
-          Experienced customer–oriented professional with strong multi-tasking skills and ability to efficiently
-          prioritize task. Passionate about building strong customer relationships, driving brand loyalty and
-          increasing customer engagement.
+          Experienced customer-oriented professional with strong multi-tasking skills and ability to efficiently prioritize task.
+          Passionate about building strong customer relationships, driving brand loyalty and increasing customer engagement.
         </p>
       </section>
 
       <!-- Employment History -->
-      <section>
-        <h2>Employment History</h2>
+      <section class="right-block">
+        <h2>EMPLOYMENT HISTORY</h2>
         
-        <div>
+        <div class="job">
           <h3>Collection Officer, XGO Finance limited (Xcredit)</h3>
           <span>Aug 2020 — Present</span>
         </div>
 
-        <div>
+        <div class="job">
           <h3>Collection Officer, Blue Ridge Microfinance Bank (OKASH)</h3>
+          <span>Lagos</span>
           <span>Jan 2020 — Jun 2020</span>
-          <p>Lagos</p>
           <p>Job Responsibilities</p>
           <ul>
             <li>Communicating with clients...</li>
@@ -105,10 +103,10 @@
           </ul>
         </div>
 
-        <div>
+        <div class="job">
           <h3>Teacher (NYSC), Giver's international School, Ikang Bakassi</h3>
+          <span>Cross River</span>
           <span>Oct 2018 — Oct 2019</span>
-          <p>Cross River</p>
           <p>Job Responsibilities</p>
           <ul>
             <li>Designed teaching materials...</li>
@@ -119,10 +117,10 @@
           </ul>
         </div>
 
-        <div>
+        <div class="job">
           <h3>Cashier, Fast Ark company</h3>
+          <span>Lagos</span>
           <span>Jan 2016 — Aug 2016</span>
-          <p>Lagos</p>
           <p>Job Responsibilities</p>
           <ul>
             <li>Managed transactions...</li>
@@ -132,10 +130,10 @@
           </ul>
         </div>
 
-        <div>
+        <div class="job">
           <h3>Barman, Super park Hotel and suite</h3>
+          <span>Lagos</span>
           <span>Feb 2015 — Nov 2015</span>
-          <p>Lagos</p>
           <p>Job Responsibilities</p>
           <ul>
             <li>Prepared beverages...</li>
@@ -147,26 +145,28 @@
       </section>
 
       <!-- Education -->
-      <section>
-        <h2>Education</h2>
-        <div>
+      <section class="right-block">
+        <h2>EDUCATION</h2>
+
+        <div class="edu">
           <h3>HND, Accounting, Gateway Polytechnic ICT, Ogun State</h3>
           <span>Sep 2016 — May 2018</span>
         </div>
-        <div>
+        <div class="edu">
           <h3>OND, Accounting, Moshood Abiola Polytechnic</h3>
           <span>Oct 2012 — Aug 2014</span>
         </div>
-        <div>
+        <div class="edu">
           <h3>SSCE, Obokun High School</h3>
           <span>Oct 2002 — Jun 2008</span>
         </div>
       </section>
 
       <!-- Leadership -->
-      <section>
-        <h2>Leadership Activities</h2>
-        <div>
+      <section class="right-block">
+        <h2>LEADERSHIP ACTIVITIES</h2>
+
+        <div class="lead-block">
           <h3>1. FOIA CDS president</h3>
           <p>Responsibilities</p>
           <ul>
@@ -175,24 +175,27 @@
             <li>Kept CDS constitution</li>
           </ul>
         </div>
-        <div>
+
+        <div class="lead-block">
           <h3>2. Senior secondary school class Representative</h3>
         </div>
+
       </section>
 
-      <section>
-        <h2>References</h2>
+      <section class="right-block">
+        <h2>REFERENCES</h2>
         <p>References available upon request</p>
       </section>
-
     </div>
+
   </div>
 </main>
 
+
 <script>
-function downloadPDF() {
-  window.print();
-}
+  document.getElementById("downloadBtn").addEventListener("click", () => {
+    window.print();
+  });
 </script>
 
 </body>
