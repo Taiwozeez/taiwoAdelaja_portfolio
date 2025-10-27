@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADEWALE ISREAL JAYEOLA - CV</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/resume.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
@@ -17,8 +17,8 @@
 
   <header>
     <h1>
-      <span class="bold-name">ADEWALE ISREAL</span><br>
-      <span class="bold-name">JAYEOLA</span>
+      <span class="name-top">ADEWALE ISREAL</span><br>
+      <span class="name-bottom">JAYEOLA</span>
     </h1>
 
     <button id="downloadBtn">Download PDF</button>
@@ -28,7 +28,6 @@
 
     <!-- SIDEBAR -->
     <aside>
-
       <div class="section-title">Details</div>
 
       <div class="detail-block">
@@ -81,14 +80,13 @@
 
       <div class="section-title line">Profile</div>
       <p class="text">
-        Experienced customer–oriented professional with strong multi-tasking skills and 
-        ability to efficiently prioritize task. Passionate about building strong customer 
+        Experienced customer–oriented professional with strong multi-tasking skills and
+        ability to efficiently prioritize tasks. Passionate about building strong customer
         relationships, driving brand loyalty and increasing customer engagement.
       </p>
 
       <div class="section-title line">Employment History</div>
 
-      <!-- NEW PRESENT JOB -->
       <div class="job">
         <h3>Call Center Agent, Sunking / Greenlight Planet</h3>
         <span class="meta loc">Lagos</span>
@@ -102,7 +100,6 @@
         </ul>
       </div>
 
-      <!-- UPDATED XGO -->
       <div class="job">
         <h3>Collection Officer, XGO Finance Limited (Xcredit)</h3>
         <span class="meta loc">Lagos</span>
@@ -164,8 +161,8 @@
         <span class="meta date">Feb 2015 — Nov 2015</span>
         <p class="subtitle">Job Responsibilities</p>
         <p class="text">
-          Prepared alcoholic or non-alcoholic beverages for bar and patrons. Interacted with 
-          customers, took orders and served snacks and drinks. Assessed bar customers’ 
+          Prepared alcoholic or non-alcoholic beverages for bar and patrons. Interacted with
+          customers, took orders and served snacks and drinks. Assessed bar customers’
           needs and preferences and made recommendations.
         </p>
       </div>
@@ -210,20 +207,27 @@
     </div>
 
   </section>
+
 </main>
 
 
 <script>
 document.getElementById("downloadBtn").addEventListener("click", function () {
+  const btn = document.getElementById("downloadBtn");
+  btn.style.display = "none";
+
   const element = document.getElementById("cv-content");
   const opt = {
-    margin: [10, 10],
+    margin: 0,
     filename: "ADEWALE_ISREAL_JAYEOLA_CV.pdf",
-    image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 3 },
+    image: { type: "jpeg", quality: 1 },
+    html2canvas: { scale: 4, scrollY: 0 },
     jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
   };
-  html2pdf().set(opt).from(element).save();
+
+  html2pdf().set(opt).from(element).save().then(() => {
+    btn.style.display = "block";
+  });
 });
 </script>
 
