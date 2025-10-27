@@ -1,69 +1,98 @@
-/* A4 print setup */
-@page {
-  size: A4;
+* {
   margin: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #f7f7f7;
-  margin: 0;
-}
-
-main {
-  width: 210mm;
-  min-height: 297mm;
-  margin: auto;
-  padding: 20mm;
-  background: #fff;
+  padding: 0;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  font-family: sans-serif;
+  color: #333;
 }
 
 /* Layout */
-.cv-body {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  gap: 20px;
+main {
+  background: #fff;
 }
 
-aside {
-  background: #fafafa;
-  padding: 16px;
-  border-radius: 8px;
-}
-
-.right-content h3 {
-  margin: 4px 0;
-}
-
-/* Header */
 header {
+  border-bottom: 1px solid #ccc;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-header button {
-  background: #000;
+#cv-content {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+aside {
+  width: 280px;
+  background: #f9f9f9;
+  border-right: 1px solid #ccc;
+  padding: 2rem;
+}
+
+/* Right Content */
+#right-content {
+  flex: 1;
+  padding: 2rem 3rem;
+}
+
+/* Titles */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: .4rem;
+}
+
+/* Spacing between blocks */
+section {
+  margin-bottom: 2rem;
+}
+
+button {
+  background: #111;
   color: #fff;
-  border: none;
-  padding: 8px 14px;
+  padding: .7rem 1.4rem;
   border-radius: 6px;
   cursor: pointer;
 }
 
-/* Hide button in print */
-@media print {
-  header button {
-    display: none;
-  }
-  body {
-    background: #fff !important;
-  }
-  main {
-    box-shadow: none;
-  }
+button:hover {
+  background: #333;
+}
+
+/* Employment item spacing */
+#right-content > section div {
+  margin-bottom: 1.4rem;
+}
+
+/* Meta info */
+span {
+  font-size: .85rem;
+  color: #666;
+}
+p {
+  line-height: 1.4rem;
 }
