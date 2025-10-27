@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADELAJA Hazeez Taiwo - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="/assets/css/resume.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADELAJA Hazeez Taiwo - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/resume.css">
 
-<main>
+  <style>
+    /* Force A4 PDF Print Size */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    main {
+      width: 210mm;
+      min-height: 297mm;
+      margin: auto;
+      padding: 20mm;
+      background: #fff;
+      box-sizing: border-box;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header button {
+      background: #000;
+      color: #fff;
+      padding: 8px 12px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+    }
+
+    /* Hide button when printing */
+    @media print {
+      header button {
+        display: none;
+      }
+      body {
+        background: #fff !important;
+      }
+      main {
+        box-shadow: none !important;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<main id="cv-content">
   <header>
     <h1>ADEWALE ISREAL JAYEOLA</h1>
-    <button>Download PDF</button>
+    <button onclick="downloadPDF()">Download PDF</button>
   </header>
 
-  <div id="cv-content">
-    
+  <div>
     <aside>
-      <!-- Details -->
       <section>
         <h2>Details</h2>
         <div>
-          <div>
-            <p>Address</p>
-            <p>20, Rafiu Tijani Street, Iyana Ejigbo, Lagos, Nigeria</p>
-          </div>
-          <div>
-            <p>Phone</p>
-            <p>08060536025</p>
-          </div>
-          <div>
-            <p>Email</p>
-            <p>walejay4real3000@gmail.com</p>
-          </div>
-          <div>
-            <p>Nationality</p>
-            <p>Nigerian</p>
-          </div>
+          <p><strong>Address:</strong> 20, Rafiu Tijani Street, Iyana Ejigbo, Lagos, Nigeria</p>
+          <p><strong>Phone:</strong> 08060536025</p>
+          <p><strong>Email:</strong> walejay4real3000@gmail.com</p>
+          <p><strong>Nationality:</strong> Nigerian</p>
         </div>
       </section>
 
-      <!-- Skills -->
       <section>
         <h2>Skills</h2>
         <ul>
@@ -59,7 +98,6 @@
         </ul>
       </section>
 
-      <!-- Hobbies -->
       <section>
         <h2>Hobbies</h2>
         <ul>
@@ -71,118 +109,71 @@
     </aside>
 
     <div id="right-content">
-      <!-- Profile -->
       <section>
         <h2>Profile</h2>
         <p>
-          Experienced customer–oriented professional with strong multi-tasking skills and ability to efficiently
-          prioritize task. Passionate about building strong customer relationships, driving brand loyalty and
-          increasing customer engagement.
+          Experienced customer–oriented professional with strong multitasking skills
+          and ability to efficiently prioritize tasks. Passionate about building strong
+          customer relationships, driving brand loyalty and increasing customer engagement.
         </p>
       </section>
 
-      <!-- Employment History -->
       <section>
         <h2>Employment History</h2>
-        
+
         <div>
-          <h3>Collection Officer, XGO Finance limited (Xcredit)</h3>
+          <h3>Collection Officer, XGO Finance Limited (Xcredit)</h3>
           <span>Aug 2020 — Present</span>
         </div>
 
         <div>
           <h3>Collection Officer, Blue Ridge Microfinance Bank (OKASH)</h3>
           <span>Jan 2020 — Jun 2020</span>
-          <p>Lagos</p>
-          <p>Job Responsibilities</p>
-          <ul>
-            <li>Communicating with clients...</li>
-            <li>Providing advice...</li>
-            <li>Answering client questions...</li>
-            <li>Listening to customer concerns...</li>
-          </ul>
         </div>
 
         <div>
-          <h3>Teacher (NYSC), Giver's international School, Ikang Bakassi</h3>
+          <h3>Teacher (NYSC), Giver's International School, Ikang Bakassi</h3>
           <span>Oct 2018 — Oct 2019</span>
-          <p>Cross River</p>
-          <p>Job Responsibilities</p>
-          <ul>
-            <li>Designed teaching materials...</li>
-            <li>Prepared weekly lesson plans</li>
-            <li>Implemented methodologies</li>
-            <li>Facilitated classroom procedures</li>
-            <li>Set culture standards</li>
-          </ul>
         </div>
 
         <div>
-          <h3>Cashier, Fast Ark company</h3>
+          <h3>Cashier, Fast Ark Company</h3>
           <span>Jan 2016 — Aug 2016</span>
-          <p>Lagos</p>
-          <p>Job Responsibilities</p>
-          <ul>
-            <li>Managed transactions...</li>
-            <li>Collected payments...</li>
-            <li>Issued receipts...</li>
-            <li>Resolved customer complaints...</li>
-          </ul>
         </div>
 
         <div>
-          <h3>Barman, Super park Hotel and suite</h3>
+          <h3>Barman, Super Park Hotel and Suite</h3>
           <span>Feb 2015 — Nov 2015</span>
-          <p>Lagos</p>
-          <p>Job Responsibilities</p>
-          <ul>
-            <li>Prepared beverages...</li>
-            <li>Interacted with customers...</li>
-            <li>Made recommendations</li>
-          </ul>
         </div>
-
       </section>
 
-      <!-- Education -->
       <section>
         <h2>Education</h2>
-        <div>
-          <h3>HND, Accounting, Gateway Polytechnic ICT, Ogun State</h3>
-          <span>Sep 2016 — May 2018</span>
-        </div>
-        <div>
-          <h3>OND, Accounting, Moshood Abiola Polytechnic</h3>
-          <span>Oct 2012 — Aug 2014</span>
-        </div>
-        <div>
-          <h3>SSCE, Obokun High School</h3>
-          <span>Oct 2002 — Jun 2008</span>
-        </div>
+        <p>HND, Accounting, Gateway Polytechnic ICT, Ogun State (2016 — 2018)</p>
+        <p>OND, Accounting, Moshood Abiola Polytechnic (2012 — 2014)</p>
+        <p>SSCE, Obokun High School (2002 — 2008)</p>
       </section>
 
-      <!-- Leadership -->
       <section>
         <h2>Leadership Activities</h2>
-        <div>
-          <h3>1. FOIA CDS president</h3>
-          <p>Responsibilities</p>
-          <ul>
-            <li>Conducted weekly CDS meetings</li>
-            <li>Led sensitization programs</li>
-            <li>Kept CDS constitution</li>
-          </ul>
-        </div>
-        <div>
-          <h3>2. Senior secondary school class Representative</h3>
-        </div>
+        <p>FOIA CDS President</p>
+        <p>Senior Secondary School Class Representative</p>
       </section>
 
       <section>
         <h2>References</h2>
-        <p>References available upon request</p>
+        <p>Available on request</p>
       </section>
 
     </div>
   </div>
 </main>
+
+<script>
+function downloadPDF() {
+  window.print();
+}
+</script>
+
+</body>
+</html>
