@@ -5,127 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADEWALE ISREAL JAYEOLA - CV</title>
     <style>
+        /* General Reset and Font */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif; /* Simpler, common font like in the image */
         }
 
         body {
-            background-color: #f5f5f5;
+            background-color: #ffffff; /* White background to mimic a document */
             color: #333;
-            line-height: 1.5;
+            line-height: 1.4; /* Slightly tighter line-height for CV readability */
             padding: 20px;
         }
 
+        /* Main CV Container */
         .cv-container {
-            max-width: 1000px;
+            max-width: 800px; /* Reduced width to match image proportions */
             margin: 0 auto;
             background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 40px;
+            /* box-shadow: 0 0 10px rgba(0,0,0,0.1); Removed shadow for a cleaner look */
+            padding: 0; /* Remove overall padding */
             display: flex;
+            flex-direction: column; /* Start with column for the header */
         }
 
-        .name-box {
-            text-align: center;
-            background: #2c3e50;
-            color: white;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 5px;
+        /* Header Section */
+        .header-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 20px 0; /* Vertical padding only */
+            border: 1px solid #000; /* Outer border */
+            border-bottom: none; /* No bottom border for separation from body */
+            margin: 0 20px; /* Side margins for the header to match the image structure */
         }
 
-        .name-box h1 {
-            font-size: 32px;
+        .header-section h1 {
+            font-size: 18px;
             font-weight: bold;
+            letter-spacing: 2px; /* Increased letter spacing */
+        }
+
+        /* Body (Two Columns) */
+        .cv-body {
+            display: flex;
+            margin: 0 20px 20px 20px; /* Same side margins as header, with bottom margin */
+            border: 1px solid #000; /* Outer border for the body section */
+            border-top: none; /* No top border, connects to header */
         }
 
         .left-column {
-            width: 35%;
-            padding-right: 30px;
-            border-right: 1px solid #e0e0e0;
+            width: 30%; /* Narrower left column */
+            padding: 20px;
+            padding-right: 15px; /* Adjusted padding */
+            border-right: 1px solid #000; /* Black vertical line */
+            background-color: #fff; /* Ensure background is white */
         }
 
         .right-column {
-            width: 65%;
-            padding-left: 30px;
+            width: 70%;
+            padding: 20px;
+            padding-left: 15px; /* Adjusted padding */
         }
 
+        /* Section Titles */
         .section-title {
-            font-size: 18px;
+            font-size: 12px; /* Smaller font size */
             font-weight: bold;
-            margin: 25px 0 15px;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
+            margin: 0 0 10px 0; /* Adjusted margin */
+            color: #000;
+            border-bottom: 1px solid #000; /* Thin black line */
             padding-bottom: 5px;
+            text-transform: uppercase;
         }
 
+        /* Details Section (Left) */
         .details-item {
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+            font-size: 10px; /* Smallest text size */
         }
 
         .detail-label {
             font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
+            color: #000;
+            margin-bottom: 2px;
+            text-transform: uppercase;
         }
 
         .detail-value {
             color: #555;
         }
 
+        /* Skills/Hobbies (Left) */
+        .section {
+            margin-bottom: 15px; /* Space between sections */
+        }
+
         .skills-list, .hobbies-list {
             list-style-type: none;
+            padding-left: 0;
+            font-size: 10px;
         }
 
         .skills-list li, .hobbies-list li {
-            padding: 5px 0;
+            padding: 2px 0;
             color: #555;
         }
 
+        /* Profile Section (Right) */
         .profile-text {
             color: #555;
+            font-size: 12px; /* Standard text size for main content */
             margin-bottom: 20px;
         }
 
+        /* Employment History (Right) */
         .job {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
         }
 
         .job-title {
             font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
+            color: #000;
+            font-size: 12px;
+        }
+        
+        /* Company Name (Bolded and in the same line as title on image) - I'll modify the HTML for this */
+        .company-name {
+            font-weight: normal; /* The company name is not bold in the image */
+            font-size: 12px;
         }
 
         .job-date {
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 10px;
+            color: #555;
+            font-style: normal; /* No italics */
+            font-size: 10px;
+            margin-bottom: 5px;
         }
 
         .job-responsibilities {
-            list-style-type: none;
+            list-style-type: disc; /* Use a simple disc for bullet points */
             margin-left: 15px;
+            font-size: 10px;
         }
 
         .job-responsibilities li {
-            padding: 3px 0;
+            padding: 2px 0;
             color: #555;
-            position: relative;
+        }
+        
+        /* New styling for Job 1 to match image format: "Role, Company (Location)" */
+        .job-heading {
+            margin-bottom: 5px;
         }
 
-        .job-responsibilities li:before {
-            content: "•";
-            color: #3498db;
-            position: absolute;
-            left: -15px;
+        .job-role {
+            font-weight: bold;
+            font-size: 12px;
+            color: #000;
+        }
+        
+        .job-company, .job-location {
+            font-weight: normal;
+            font-size: 10px;
         }
 
+        /* Download Button - kept for functionality but hidden for clean print/PDF */
         .download-btn {
-            background: #2c3e50;
+            background: #4a4a4a;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -134,170 +183,170 @@
             font-weight: bold;
             margin-top: 20px;
             display: block;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .download-btn:hover {
-            background: #34495e;
+            background: #333;
         }
 
         @media print {
             .download-btn {
                 display: none;
             }
+            body {
+                padding: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+                margin: 0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="cv-container">
-        <!-- Left Column -->
-        <div class="left-column">
-            <div class="name-box">
-                <h1>ADEWALE ISREAL JAYEOLA</h1>
+        <div class="header-section">
+            <h1>ADEWALE ISREAL JAYEOLA</h1>
+        </div>
+
+        <div class="cv-body">
+            <div class="left-column">
+                
+                <div class="section">
+                    <h2 class="section-title">DETAILS</h2>
+                    <div class="details-item">
+                        <div class="detail-label">ADDRESS</div>
+                        <div class="detail-value">39 Jubril Shittu street, Asolo bus stop, Agric ikorodu Lagos</div>
+                    </div>
+                    <div class="details-item">
+                        <div class="detail-label">PHONE</div>
+                        <div class="detail-value">08060536025</div>
+                    </div>
+                    <div class="details-item">
+                        <div class="detail-label">EMAIL</div>
+                        <div class="detail-value">walejay4real3000@gmail.com</div>
+                    </div>
+                    <div class="details-item">
+                        <div class="detail-label">NATIONALITY</div>
+                        <div class="detail-value">Nigerian</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">SKILLS</h2>
+                    <ul class="skills-list">
+                        <li>Good team player</li>
+                        <li>Listening skills</li>
+                        <li>Active Learning</li>
+                        <li>Negotiation</li>
+                        <li>Customer Relationship Management</li>
+                        <li>Good communication and interpersonal skills</li>
+                        <li>Effective Time Management</li>
+                        <li>Conflict Resolution</li>
+                        <li>Decision Making</li>
+                        <li>Flexibility</li>
+                        <li>Critical Thinking</li>
+                        <li>Creative Problem Solving</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">HOBBIES</h2>
+                    <ul class="hobbies-list">
+                        <li>Singing</li>
+                        <li>Reading</li>
+                        <li>Adventure</li>
+                    </ul>
+                </div>
             </div>
             
-            <!-- Details Section -->
-            <div class="section">
-                <h2 class="section-title">DETAILS</h2>
-                <div class="details-item">
-                    <div class="detail-label">ADDRESS</div>
-                    <div class="detail-value">39 Jubril Shittu street, Asolo bus stop, Agric ikorodu Lagos</div>
+            <div class="right-column">
+                <div class="section">
+                    <h2 class="section-title">PROFILE</h2>
+                    <p class="profile-text">
+                        Experienced customer-oriented professional with strong multi-tasking skills and ability to efficiently prioritize task. Passionate about building strong customer relationships, driving brand loyalty and increasing customer engagement.
+                    </p>
                 </div>
-                <div class="details-item">
-                    <div class="detail-label">PHONE</div>
-                    <div class="detail-value">08060536025</div>
+                
+                <div class="section">
+                    <h2 class="section-title">EMPLOYMENT HISTORY</h2>
+                    
+                    <div class="job">
+                        <div class="job-heading">
+                            <span class="job-role">Collection Officer, XGO Finance Limited (Xcredit)</span>
+                        </div>
+                        <div class="job-date">Aug 2020 — Present</div>
+                        <ul class="job-responsibilities">
+                            <li>Communicated with clients and customers about their experiences with the services</li>
+                            <li>Provided advice on purchasing services based on the prospective client</li>
+                            <li>Answered client or customer questions about properly using or accessing service</li>
+                            <li>Listened to customer or client complaints or concerns and worked to resolve their issues</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <div class="job-heading">
+                            <span class="job-role">Collection Officer, Blue Ridge Microfinance Bank (OKASH)</span>
+                        </div>
+                        <div class="job-date">Jan 2020 — Jun 2020</div>
+                        <ul class="job-responsibilities">
+                            <li>Communicated with clients and customers about their experiences with the services</li>
+                            <li>Provided advice on purchasing services based on the prospective client</li>
+                            <li>Answered client or customer questions about properly using or accessing service</li>
+                            <li>Listened to customer or client complaints or concerns and worked to resolve their issues</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <div class="job-heading">
+                            <span class="job-role">Teacher (NYSC), Giver's International School, Ikang Bakassi</span>
+                        </div>
+                        <div class="job-date">Oct 2018 — Oct 2019</div>
+                        <ul class="job-responsibilities">
+                            <li>Designed teaching materials to sustain students' interest in the subject</li>
+                            <li>Prepared weekly lesson plans</li>
+                            <li>Designed coherent instruction methodology</li>
+                            <li>Implemented initiatives and teaching methodologies</li>
+                            <li>Facilitated classroom procedures</li>
+                            <li>Set culture standards for learning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <div class="job-heading">
+                            <span class="job-role">Cashier, Fast Ark company</span>
+                        </div>
+                        <div class="job-date">Jan 2016 — Aug 2016</div>
+                        <ul class="job-responsibilities">
+                            <li>Managed transactions with customers using cash registers</li>
+                            <li>Collected payments whether in cash or credit</li>
+                            <li>Issued receipts, refunds, change or tickets</li>
+                            <li>Resolved customer complaints, guided them and provided relevant information</li>
+                            <li>Tracked transactions on balance sheets and reported any discrepancies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <div class="job-heading">
+                            <span class="job-role">Barman, Super Park Hotel and Suite</span>
+                        </div>
+                        <div class="job-date">Feb 2015 — Nov 2015</div>
+                        <ul class="job-responsibilities">
+                            <li>Prepared alcoholic or non-alcoholic beverages for bar and patrons</li>
+                            <li>Interacted with customers, took orders and served snacks and drinks</li>
+                            <li>Assessed bar customers' needs and preferences and made recommendations</li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div class="details-item">
-                    <div class="detail-label">EMAIL</div>
-                    <div class="detail-value">walejay4real3000@gmail.com</div>
-                </div>
-                <div class="details-item">
-                    <div class="detail-label">NATIONALITY</div>
-                    <div class="detail-value">Nigerian</div>
-                </div>
-            </div>
-            
-            <!-- Skills Section -->
-            <div class="section">
-                <h2 class="section-title">SKILLS</h2>
-                <ul class="skills-list">
-                    <li>Good team player</li>
-                    <li>Listening skills</li>
-                    <li>Active Learning</li>
-                    <li>Negotiation</li>
-                    <li>Customer Relationship Management</li>
-                    <li>Good communication and interpersonal skills</li>
-                    <li>Effective Time Management</li>
-                    <li>Conflict Resolution</li>
-                    <li>Decision Making</li>
-                    <li>Flexibility</li>
-                    <li>Critical Thinking</li>
-                    <li>Creative Problem Solving</li>
-                </ul>
-            </div>
-            
-            <!-- Hobbies Section -->
-            <div class="section">
-                <h2 class="section-title">HOBBIES</h2>
-                <ul class="hobbies-list">
-                    <li>Singing</li>
-                    <li>Reading</li>
-                    <li>Adventure</li>
-                </ul>
             </div>
         </div>
         
-        <!-- Right Column -->
-        <div class="right-column">
-            <!-- Profile Section -->
-            <div class="section">
-                <h2 class="section-title">PROFILE</h2>
-                <p class="profile-text">
-                    Experienced customer-oriented professional with strong multi-tasking skills and ability to efficiently prioritize task. Passionate about building strong customer relationships, driving brand loyalty and increasing customer engagement.
-                </p>
-            </div>
-            
-            <!-- Employment History Section -->
-            <div class="section">
-                <h2 class="section-title">EMPLOYMENT HISTORY</h2>
-                
-                <!-- Job 1 -->
-                <div class="job">
-                    <div class="job-title">Call Center Agent, Sunking / Greenlight Planet</div>
-                    <div class="job-date">March 2022 — Present</div>
-                    <ul class="job-responsibilities">
-                        <li>Resolved customer inquiries and issues regarding solar products and services</li>
-                        <li>Provided technical support and troubleshooting for solar system installations</li>
-                        <li>Managed customer accounts and processed service requests efficiently</li>
-                        <li>Maintained detailed records of customer interactions and resolutions</li>
-                        <li>Educated customers on product features and optimal usage practices</li>
-                    </ul>
-                </div>
-                
-                <!-- Job 2 -->
-                <div class="job">
-                    <div class="job-title">Collection Officer, XGO Finance Limited (Xcredit)</div>
-                    <div class="job-date">Aug 2020 — 2022</div>
-                    <ul class="job-responsibilities">
-                        <li>Communicated with clients and customers about their experiences with the services</li>
-                        <li>Provided advice on purchasing services based on the prospective client</li>
-                        <li>Answered client or customer questions about properly using or accessing service</li>
-                        <li>Listened to customer or client complaints or concerns and worked to resolve their issues</li>
-                    </ul>
-                </div>
-                
-                <!-- Job 3 -->
-                <div class="job">
-                    <div class="job-title">Collection Officer, Blue Ridge Microfinance Bank (OKASH)</div>
-                    <div class="job-date">Jan 2020 — Jun 2020</div>
-                    <ul class="job-responsibilities">
-                        <li>Communicated with clients and customers about their experiences with the services</li>
-                        <li>Provided advice on purchasing services based on the prospective client</li>
-                        <li>Answered client or customer questions about properly using or accessing service</li>
-                        <li>Listened to customer or client complaints or concerns and worked to resolve their issues</li>
-                    </ul>
-                </div>
-                
-                <!-- Job 4 -->
-                <div class="job">
-                    <div class="job-title">Teacher (NYSC), Giver's International School, Ikang Bakassi</div>
-                    <div class="job-date">Oct 2018 — Oct 2019</div>
-                    <ul class="job-responsibilities">
-                        <li>Designed teaching materials to sustain students' interest in the subject</li>
-                        <li>Prepared weekly lesson plans</li>
-                        <li>Designed coherent instruction methodology</li>
-                        <li>Implemented initiatives and teaching methodologies</li>
-                        <li>Facilitated classroom procedures</li>
-                        <li>Set culture standards for learning</li>
-                    </ul>
-                </div>
-                
-                <!-- Job 5 -->
-                <div class="job">
-                    <div class="job-title">Cashier, Fast Ark Company</div>
-                    <div class="job-date">Jan 2016 — Aug 2016</div>
-                    <ul class="job-responsibilities">
-                        <li>Managed transactions with customers using cash registers</li>
-                        <li>Collected payments whether in cash or credit</li>
-                        <li>Issued receipts, refunds, change or tickets</li>
-                        <li>Resolved customer complaints, guided them and provided relevant information</li>
-                        <li>Tracked transactions on balance sheets and reported any discrepancies</li>
-                    </ul>
-                </div>
-                
-                <!-- Job 6 -->
-                <div class="job">
-                    <div class="job-title">Barman, Super Park Hotel and Suite</div>
-                    <div class="job-date">Feb 2015 — Nov 2015</div>
-                    <ul class="job-responsibilities">
-                        <li>Prepared alcoholic or non-alcoholic beverages for bar and patrons</li>
-                        <li>Interacted with customers, took orders and served snacks and drinks</li>
-                        <li>Assessed bar customers' needs and preferences and made recommendations</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
-        </div>
+        <button class="download-btn" onclick="downloadPDF()">Download CV as PDF</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -313,6 +362,7 @@
                 jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
             };
 
+            // Use the PDF library to generate and save the file
             html2pdf().set(options).from(element).save();
         }
     </script>
