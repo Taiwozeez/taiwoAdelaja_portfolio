@@ -16,7 +16,6 @@ body {
   margin: auto;
   padding-bottom: 20mm;
   background: #fff;
-  position: relative;
 }
 
 header {
@@ -148,14 +147,6 @@ aside {
   margin-bottom: 6px;
 }
 
-/* Page break for PDF */
-.page-break {
-  page-break-before: always;
-  height: 0;
-  margin: 0;
-  padding: 0;
-}
-
 /* PDF / PRINT MODE */
 @media print {
   header button {
@@ -164,9 +155,5 @@ aside {
   }
   body {
     -webkit-print-color-adjust: exact;
-  }
-  
-  .page-break {
-    page-break-before: always;
   }
 }
