@@ -4,273 +4,308 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADEWALE ISREAL JAYEOLA - CV</title>
-  <link rel="stylesheet" href="/assets/css/resume.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+            display: flex;
+        }
+
+        .left-column {
+            width: 35%;
+            padding-right: 30px;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .right-column {
+            width: 65%;
+            padding-left: 30px;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 25px 0 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        .details-item {
+            margin-bottom: 15px;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            color: #555;
+        }
+
+        .skills-list, .hobbies-list {
+            list-style-type: none;
+        }
+
+        .skills-list li, .hobbies-list li {
+            padding: 5px 0;
+            color: #555;
+        }
+
+        .profile-text {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .job-date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .job-responsibilities {
+            list-style-type: none;
+            margin-left: 15px;
+        }
+
+        .job-responsibilities li {
+            padding: 3px 0;
+            color: #555;
+            position: relative;
+        }
+
+        .job-responsibilities li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: -15px;
+        }
+
+        .download-btn {
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .download-btn:hover {
+            background: #34495e;
+        }
+
+        @media print {
+            .download-btn {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <main class="min-h-screen bg-white text-gray-900 font-sans">
-        <header class="border-b border-gray-200 py-8 px-6 md:px-12 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
-            <h1 class="text-4xl md:text-5xl font-bold tracking-tight">ADEWALE ISREAL JAYEOLA</h1>
-            <button
-                id="downloadBtn"
-                class="px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm whitespace-nowrap"
-            >
-                Download PDF
-            </button>
-        </header>
-
-        <div class="cv-content flex flex-col md:flex-row">
-            <!-- Left Sidebar -->
-            <aside class="w-full md:w-80 bg-gray-50 border-r border-gray-200 p-6 md:p-8">
-                <!-- Details Section -->
-                <section class="mb-8">
-                    <h2 class="text-xs font-bold tracking-widest text-gray-700 mb-4 uppercase">Details</h2>
-                    <div class="space-y-4 text-sm">
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">Address</p>
-                            <p class="text-gray-600 leading-relaxed">39 Jubril Shittu street, Asolo bus stop, Agric ikorodu Lagos</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">Phone</p>
-                            <p class="text-gray-600">08060536025</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">Email</p>
-                            <p class="text-gray-600 break-all">walejay4real3000@gmail.com</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">Nationality</p>
-                            <p class="text-gray-600">Nigerian</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Skills Section -->
-                <section class="mb-8">
-                    <h2 class="text-xs font-bold tracking-widest text-gray-700 mb-4 uppercase">Skills</h2>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li>• Good team player</li>
-                        <li>• Listening Skills</li>
-                        <li>• Active Learning</li>
-                        <li>• Negotiation</li>
-                        <li>• Customer Relationship Management</li>
-                        <li>• Good communication and interpersonal skills</li>
-                        <li>• Effective Time Management</li>
-                        <li>• Conflict Resolution</li>
-                        <li>• Decision Making</li>
-                        <li>• Flexibility</li>
-                        <li>• Critical Thinking</li>
-                        <li>• Creative Problem Solving</li>
-                    </ul>
-                </section>
-
-                <!-- Hobbies Section -->
-                <section>
-                    <h2 class="text-xs font-bold tracking-widest text-gray-700 mb-4 uppercase">Hobbies</h2>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li>• Singing</li>
-                        <li>• Reading</li>
-                        <li>• Adventure</li>
-                    </ul>
-                </section>
-            </aside>
-
-            <!-- Right Content -->
-            <div class="flex-1 p-6 md:p-8 lg:p-12">
-                <!-- Profile Section -->
-                <section class="mb-10">
-                    <h2 class="text-xs font-bold tracking-widest text-gray-700 mb-4 uppercase">Profile</h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        Experienced customer-oriented professional with strong multi-tasking skills and ability to efficiently
-                        prioritize task. Passionate about building strong customer relationships, driving brand loyalty and
-                        increasing customer engagement.
-                    </p>
-                </section>
-
-                <!-- Employment History Section -->
-                <section class="mb-10">
-                    <h2 class="text-xs font-bold tracking-widest text-gray-700 mb-6 uppercase">Employment History</h2>
-                    <div class="space-y-8">
-                        <!-- Job 1 -->
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-semibold text-gray-900">Call Center Agent, Sunking / Greenlight Planet</h3>
-                                <span class="text-sm text-gray-600 md:text-right">March 2022 — Present</span>
-                            </div>
-                            <p class="text-xs font-semibold text-gray-700 mb-2 uppercase">Job Responsibilities</p>
-                            <ul class="space-y-1 text-sm text-gray-700 ml-4">
-                                <li>• Resolved customer inquiries and issues regarding solar products and services</li>
-                                <li>• Provided technical support and troubleshooting for solar system installations</li>
-                                <li>• Managed customer accounts and processed service requests efficiently</li>
-                                <li>• Maintained detailed records of customer interactions and resolutions</li>
-                                <li>• Educated customers on product features and optimal usage practices</li>
-                            </ul>
-                        </div>
-
-                        <!-- Job 2 -->
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-semibold text-gray-900">Collection Officer, XGO Finance Limited (Xcredit)</h3>
-                                <span class="text-sm text-gray-600 md:text-right">Aug 2020 — 2022</span>
-                            </div>
-                            <p class="text-xs font-semibold text-gray-700 mb-2 uppercase">Job Responsibilities</p>
-                            <ul class="space-y-1 text-sm text-gray-700 ml-4">
-                                <li>• Communicated with clients and customers about their experiences with the services</li>
-                                <li>• Providing advice on purchasing services based on the prospective client</li>
-                                <li>• Answering client or customer questions about properly using or accessing service</li>
-                                <li>• Listening to customer or client complaints or concerns and working to resolve their issues</li>
-                            </ul>
-                        </div>
-
-                        <!-- Job 3 -->
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-semibold text-gray-900">
-                                    Collection Officer, Blue Ridge Microfinance Bank (OKASH)
-                                </h3>
-                                <span class="text-sm text-gray-600 md:text-right">Jan 2020 — Jun 2020</span>
-                            </div>
-                            <p class="text-sm text-gray-600 mb-3">Lagos</p>
-                            <p class="text-xs font-semibold text-gray-700 mb-2 uppercase">Job Responsibilities</p>
-                            <ul class="space-y-1 text-sm text-gray-700 ml-4">
-                                <li>• Communicating with clients and customers about their experiences with the services</li>
-                                <li>• Providing advice on purchasing services based on the prospective client</li>
-                                <li>• Answering client or customer questions about properly using or accessing service</li>
-                                <li>• Listening to customer or client complaints or concerns and working to resolve their issues</li>
-                            </ul>
-                        </div>
-
-                        <!-- Job 4 -->
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-semibold text-gray-900">
-                                    Teacher (NYSC), Giver's international School, Ikang Bakassi
-                                </h3>
-                                <span class="text-sm text-gray-600 md:text-right">Oct 2018 — Oct 2019</span>
-                            </div>
-                            <p class="text-sm text-gray-600 mb-3">Cross River</p>
-                            <p class="text-xs font-semibold text-gray-700 mb-2 uppercase">Job Responsibilities</p>
-                            <ul class="space-y-1 text-sm text-gray-700 ml-4">
-                                <li>• Designed teaching materials to sustain students' interest in the subject</li>
-                                <li>• Prepared weekly lesson plans</li>
-                                <li>• Designed coherent instruction methodology</li>
-                                <li>• Implemented initiatives and teaching methodologies</li>
-                                <li>• Facilitated classroom procedures</li>
-                                <li>• Set culture standards for learning</li>
-                            </ul>
-                        </div>
-
-                        <!-- Job 5 -->
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-semibold text-gray-900">Cashier, Fast Ark company</h3>
-                                <span class="text-sm text-gray-600 md:text-right">Jan 2016 — Aug 2016</span>
-                            </div>
-                            <p class="text-sm text-gray-600 mb-3">Lagos</p>
-                            <p class="text-xs font-semibold text-gray-700 mb-2 uppercase">Job Responsibilities</p>
-                            <ul class="space-y-1 text-sm text-gray-700 ml-4">
-                                <li>• Managed transactions with customers using cash registers</li>
-                                <li>• Collected payments whether in cash or credit</li>
-                                <li>• Issued receipts, refunds, change or tickets</li>
-                                <li>• Resolved customer complaints, guide them and provide relevant information</li>
-                                <li>• Tracked transactions on balance sheets and report any discrepancies</li>
-                            </ul>
-                        </div>
-
-                        <!-- Job 6 -->
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-semibold text-gray-900">Barman, Super park Hotel and suite</h3>
-                                <span class="text-sm text-gray-600 md:text-right">Feb 2015 — Nov 2015</span>
-                            </div>
-                            <p class="text-sm text-gray-600 mb-3">Lagos</p>
-                            <p class="text-xs font-semibold text-gray-700 mb-2 uppercase">Job Responsibilities</p>
-                            <ul class="space-y-1 text-sm text-gray-700 ml-4">
-                                <li>• Prepared alcoholic or non-alcoholic beverages for bar and patrons</li>
-                                <li>• Interacted with customers, took orders and served snacks and drinks</li>
-                                <li>• Assessed bar customers' needs and preferences and made recommendations</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Education Section -->
-                <section class="mb-10">
-                    <h2 class="text-xs font-bold tracking-widest text-gray-700 mb-6 uppercase">Education</h2>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
-                                <h3 class="font-semibold text-gray-900">HND, Accounting, Gateway Polytechnic ICT, Ogun State</h3>
-                                <span class="text-sm text-gray-600 md:text-right">Sep 2016 — May 2018</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
-                                <h3 class="font-semibold text-gray-900">
-                                    OND, Accounting, Moshood Abiola Polytechnic, Ogun State
-                                </h3>
-                                <span class="text-sm text-gray-600 md:text-right">Oct 2012 — Aug 2014</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
-                                <h3 class="font-semibold text-gray-900">
-                                    Senior School Certificate Examination (SSCE), Obokun High School, Okesha Ilesha, Osun State
-                                </h3>
-                                <span class="text-sm text-gray-600 md:text-right">Oct 2002 — Jun 2008</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Leadership Activities Section -->
-                <section class="mb-10">
-                    <h2 class="text-xs font-bold tracking-widest text-gray-700 mb-6 uppercase">Leadership Activities</h2>
-                    <div class="space-y-6">
-                        <div>
-                            <h3 class="font-semibold text-gray-900 mb-3">1. FOIA CDS president</h3>
-                            <p class="text-xs font-semibold text-gray-700 mb-2 uppercase">Responsibilities</p>
-                            <ul class="space-y-1 text-sm text-gray-700 ml-4">
-                                <li>• Conducted weekly CDS meeting with members</li>
-                                <li>• Transmitted information from LGI to CDS members</li>
-                                <li>• Led members for monthly sensitization</li>
-                                <li>• Sensitized people and member of objectives of this particular CDS</li>
-                                <li>• Kept CDs constitution</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-900">2. Senior secondary school class Representative</h3>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- References Section -->
-                <section>
-                    <h2 class="text-xs font-bold tracking-widest text-gray-700 mb-4 uppercase">References</h2>
-                    <p class="text-sm text-gray-600">References available upon request</p>
-                </section>
+    <div class="cv-container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <h1 class="name">ADEWALE ISREAL JAYEOLA</h1>
+            
+            <!-- Details Section -->
+            <div class="section">
+                <h2 class="section-title">DETAILS</h2>
+                <div class="details-item">
+                    <div class="detail-label">ADDRESS</div>
+                    <div class="detail-value">39 Jubril Shittu street, Asolo bus stop, Agric ikorodu Lagos</div>
+                </div>
+                <div class="details-item">
+                    <div class="detail-label">PHONE</div>
+                    <div class="detail-value">08060536025</div>
+                </div>
+                <div class="details-item">
+                    <div class="detail-label">EMAIL</div>
+                    <div class="detail-value">walejay4real3000@gmail.com</div>
+                </div>
+                <div class="details-item">
+                    <div class="detail-label">NATIONALITY</div>
+                    <div class="detail-value">Nigerian</div>
+                </div>
+            </div>
+            
+            <!-- Skills Section -->
+            <div class="section">
+                <h2 class="section-title">SKILLS</h2>
+                <ul class="skills-list">
+                    <li>Good team player</li>
+                    <li>Listening skills</li>
+                    <li>Active Learning</li>
+                    <li>Negotiation</li>
+                    <li>Customer Relationship Management</li>
+                    <li>Good communication and interpersonal skills</li>
+                    <li>Effective Time Management</li>
+                    <li>Conflict Resolution</li>
+                    <li>Decision Making</li>
+                    <li>Flexibility</li>
+                    <li>Critical Thinking</li>
+                    <li>Creative Problem Solving</li>
+                </ul>
+            </div>
+            
+            <!-- Hobbies Section -->
+            <div class="section">
+                <h2 class="section-title">HOBBIES</h2>
+                <ul class="hobbies-list">
+                    <li>Singing</li>
+                    <li>Reading</li>
+                    <li>Adventure</li>
+                </ul>
             </div>
         </div>
-    </main>
+        
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Profile Section -->
+            <div class="section">
+                <h2 class="section-title">PROFILE</h2>
+                <p class="profile-text">
+                    Experienced customer-oriented professional with strong multi-tasking skills and ability to efficiently prioritize task. Passionate about building strong customer relationships, driving brand loyalty and increasing customer engagement.
+                </p>
+            </div>
+            
+            <!-- Employment History Section -->
+            <div class="section">
+                <h2 class="section-title">EMPLOYMENT HISTORY</h2>
+                
+                <!-- Job 1 -->
+                <div class="job">
+                    <div class="job-title">Call Center Agent, Sunking / Greenlight Planet</div>
+                    <div class="job-date">March 2022 — Present</div>
+                    <ul class="job-responsibilities">
+                        <li>Resolved customer inquiries and issues regarding solar products and services</li>
+                        <li>Provided technical support and troubleshooting for solar system installations</li>
+                        <li>Managed customer accounts and processed service requests efficiently</li>
+                        <li>Maintained detailed records of customer interactions and resolutions</li>
+                        <li>Educated customers on product features and optimal usage practices</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 2 -->
+                <div class="job">
+                    <div class="job-title">Collection Officer, XGO Finance Limited (Xcredit)</div>
+                    <div class="job-date">Aug 2020 — 2022</div>
+                    <ul class="job-responsibilities">
+                        <li>Communicated with clients and customers about their experiences with the services</li>
+                        <li>Provided advice on purchasing services based on the prospective client</li>
+                        <li>Answered client or customer questions about properly using or accessing service</li>
+                        <li>Listened to customer or client complaints or concerns and worked to resolve their issues</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 3 -->
+                <div class="job">
+                    <div class="job-title">Collection Officer, Blue Ridge Microfinance Bank (OKASH)</div>
+                    <div class="job-date">Jan 2020 — Jun 2020</div>
+                    <ul class="job-responsibilities">
+                        <li>Communicated with clients and customers about their experiences with the services</li>
+                        <li>Provided advice on purchasing services based on the prospective client</li>
+                        <li>Answered client or customer questions about properly using or accessing service</li>
+                        <li>Listened to customer or client complaints or concerns and worked to resolve their issues</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 4 -->
+                <div class="job">
+                    <div class="job-title">Teacher (NYSC), Giver's International School, Ikang Bakassi</div>
+                    <div class="job-date">Oct 2018 — Oct 2019</div>
+                    <ul class="job-responsibilities">
+                        <li>Designed teaching materials to sustain students' interest in the subject</li>
+                        <li>Prepared weekly lesson plans</li>
+                        <li>Designed coherent instruction methodology</li>
+                        <li>Implemented initiatives and teaching methodologies</li>
+                        <li>Facilitated classroom procedures</li>
+                        <li>Set culture standards for learning</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 5 -->
+                <div class="job">
+                    <div class="job-title">Cashier, Fast Ark Company</div>
+                    <div class="job-date">Jan 2016 — Aug 2016</div>
+                    <ul class="job-responsibilities">
+                        <li>Managed transactions with customers using cash registers</li>
+                        <li>Collected payments whether in cash or credit</li>
+                        <li>Issued receipts, refunds, change or tickets</li>
+                        <li>Resolved customer complaints, guided them and provided relevant information</li>
+                        <li>Tracked transactions on balance sheets and reported any discrepancies</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 6 -->
+                <div class="job">
+                    <div class="job-title">Barman, Super Park Hotel and Suite</div>
+                    <div class="job-date">Feb 2015 — Nov 2015</div>
+                    <ul class="job-responsibilities">
+                        <li>Prepared alcoholic or non-alcoholic beverages for bar and patrons</li>
+                        <li>Interacted with customers, took orders and served snacks and drinks</li>
+                        <li>Assessed bar customers' needs and preferences and made recommendations</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const downloadBtn = document.getElementById('downloadBtn');
+        function downloadPDF() {
+            const element = document.querySelector('.cv-container');
             
-            downloadBtn.addEventListener('click', function() {
-                const element = document.querySelector('main');
-                
-                const options = {
-                    margin: 10,
-                    filename: 'ADEWALE_ISREAL_JAYEOLA_CV.pdf',
-                    image: { type: 'jpeg', quality: 0.98 },
-                    html2canvas: { scale: 2 },
-                    jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
-                };
+            const options = {
+                margin: 10,
+                filename: 'ADEWALE_ISREAL_JAYEOLA_CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+            };
 
-                html2pdf().set(options).from(element).save();
-            });
-        });
+            html2pdf().set(options).from(element).save();
+        }
     </script>
 </body>
 </html>
