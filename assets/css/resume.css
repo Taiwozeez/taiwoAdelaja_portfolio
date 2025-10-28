@@ -1,19 +1,24 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #000;
   background: #fff;
 }
 
-/* A4 Container */
 #cv-content {
   width: 210mm;
   min-height: 297mm;
   margin: auto;
-  padding-bottom: 10mm;
+  padding-bottom: 20mm;
+  background: #fff;
+  position: relative;
 }
 
-/******** HEADER ********/
 header {
   text-align: center;
   border-bottom: 1px solid #000;
@@ -21,13 +26,20 @@ header {
   position: relative;
 }
 
-.name-top { font-size: 40px; font-weight: 800; }
-.name-bottom { font-size: 36px; font-weight: 800; }
+.name-top {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.name-bottom {
+  font-size: 34px;
+  font-weight: 700;
+}
 
 header h1 {
   border: 3px solid #000;
-  padding: 16px 42px;
-  line-height: 140%;
+  padding: 14px 40px;
+  line-height: 130%;
   display: inline-block;
 }
 
@@ -40,36 +52,51 @@ header button {
   background: #000;
   color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-/******** BODY LAYOUT ********/
-.container { display: flex; }
+header button:hover {
+  opacity: .8;
+}
 
-/******* SIDEBAR *******/
+/* Layout */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
 aside {
   width: 32%;
-  padding: 24px;
-  border-right: 1px solid #000;
+  padding: 22px;
+  border-right: 1px solid #ddd;
 }
 
 .section-title {
   font-size: 12px;
-  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-top: 18px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: 20px;
   margin-bottom: 6px;
 }
 
-.label { font-size: 11px; font-weight: 600; }
-.value { font-size: 11px; margin-bottom: 10px; line-height: 1.35rem; }
+.label {
+  font-size: 11px;
+  font-weight: 600;
+}
 
-/******* MAIN CONTENT *******/
+.value {
+  font-size: 11px;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Right Content */
 .content {
   width: 68%;
-  padding: 26px 36px;
+  padding: 24px 34px;
 }
 
 .line {
@@ -78,11 +105,14 @@ aside {
   margin-bottom: 8px;
 }
 
-.text { font-size: 11px; line-height: 1.42rem; margin-bottom: 10px; }
+.text {
+  font-size: 11px;
+  line-height: 1.45rem;
+  margin-bottom: 10px;
+}
 
 .job, .edu {
-  margin-bottom: 14px;
-  page-break-inside: avoid;
+  margin-bottom: 18px;
 }
 
 .job h3, .edu h3 {
@@ -90,36 +120,43 @@ aside {
   font-weight: 600;
 }
 
-/* State and Date same size */
-.state, .date {
+.meta {
   font-size: 10px;
-  opacity: .75;
-  margin-top: 2px;
-  line-height: 1.2;
+  display: block;
+}
+
+.date {
+  opacity: .8;
+  margin-bottom: 6px;
+}
+
+.loc {
+  text-align: right;
+  font-weight: 500;
+  margin-bottom: 2px;
 }
 
 .subtitle {
   font-size: 11px;
   font-weight: 600;
-  margin: 6px 0 4px;
+  margin-bottom: 4px;
   text-transform: uppercase;
 }
 
-ul.list {
-  padding-left: 16px;
-}
-
-ul.list li {
+.list.text li {
   font-size: 11px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
-/* Ensures "Prepared weekly lesson plans" moves to next page cleanly */
-.break-next-page {
+/* Page break for PDF */
+.page-break {
   page-break-before: always;
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/******** PRINT MODE ********/
+/* PDF / PRINT MODE */
 @media print {
   header button {
     display: none !important;
@@ -127,5 +164,9 @@ ul.list li {
   }
   body {
     -webkit-print-color-adjust: exact;
+  }
+  
+  .page-break {
+    page-break-before: always;
   }
 }
