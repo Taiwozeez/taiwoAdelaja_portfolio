@@ -10,25 +10,24 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif; /* Simpler, common font like in the image */
+            font-family: Arial, sans-serif;
         }
 
         body {
-            background-color: #ffffff; /* White background to mimic a document */
+            background-color: #ffffff;
             color: #333;
-            line-height: 1.4; /* Slightly tighter line-height for CV readability */
+            line-height: 1.4;
             padding: 20px;
         }
 
         /* Main CV Container */
         .cv-container {
-            max-width: 800px; /* Reduced width to match image proportions */
+            max-width: 800px;
             margin: 0 auto;
             background: white;
-            /* box-shadow: 0 0 10px rgba(0,0,0,0.1); Removed shadow for a cleaner look */
-            padding: 0; /* Remove overall padding */
+            padding: 0;
             display: flex;
-            flex-direction: column; /* Start with column for the header */
+            flex-direction: column;
         }
 
         /* Header Section */
@@ -36,47 +35,47 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px 0 20px 0; /* Vertical padding only */
-            border: 1px solid #000; /* Outer border */
-            border-bottom: none; /* No bottom border for separation from body */
-            margin: 0 20px; /* Side margins for the header to match the image structure */
+            padding: 20px 0 20px 0;
+            border: 1px solid #000;
+            border-bottom: none;
+            margin: 0 20px;
         }
 
         .header-section h1 {
             font-size: 18px;
             font-weight: bold;
-            letter-spacing: 2px; /* Increased letter spacing */
+            letter-spacing: 2px;
         }
 
         /* Body (Two Columns) */
         .cv-body {
             display: flex;
-            margin: 0 20px 20px 20px; /* Same side margins as header, with bottom margin */
-            border: 1px solid #000; /* Outer border for the body section */
-            border-top: none; /* No top border, connects to header */
+            margin: 0 20px 20px 20px;
+            border: 1px solid #000;
+            border-top: none;
         }
 
         .left-column {
-            width: 30%; /* Narrower left column */
+            width: 30%;
             padding: 20px;
-            padding-right: 15px; /* Adjusted padding */
-            border-right: 1px solid #000; /* Black vertical line */
-            background-color: #fff; /* Ensure background is white */
+            padding-right: 15px;
+            border-right: 1px solid #000;
+            background-color: #fff;
         }
 
         .right-column {
             width: 70%;
             padding: 20px;
-            padding-left: 15px; /* Adjusted padding */
+            padding-left: 15px;
         }
 
         /* Section Titles */
         .section-title {
-            font-size: 12px; /* Smaller font size */
+            font-size: 12px;
             font-weight: bold;
-            margin: 0 0 10px 0; /* Adjusted margin */
+            margin: 0 0 10px 0;
             color: #000;
-            border-bottom: 1px solid #000; /* Thin black line */
+            border-bottom: 1px solid #000;
             padding-bottom: 5px;
             text-transform: uppercase;
         }
@@ -84,7 +83,7 @@
         /* Details Section (Left) */
         .details-item {
             margin-bottom: 5px;
-            font-size: 10px; /* Smallest text size */
+            font-size: 10px;
         }
 
         .detail-label {
@@ -100,7 +99,7 @@
 
         /* Skills/Hobbies (Left) */
         .section {
-            margin-bottom: 15px; /* Space between sections */
+            margin-bottom: 15px;
         }
 
         .skills-list, .hobbies-list {
@@ -117,7 +116,7 @@
         /* Profile Section (Right) */
         .profile-text {
             color: #555;
-            font-size: 12px; /* Standard text size for main content */
+            font-size: 12px;
             margin-bottom: 20px;
         }
 
@@ -134,19 +133,19 @@
         
         /* Company Name (Bolded and in the same line as title on image) - I'll modify the HTML for this */
         .company-name {
-            font-weight: normal; /* The company name is not bold in the image */
+            font-weight: normal;
             font-size: 12px;
         }
 
         .job-date {
             color: #555;
-            font-style: normal; /* No italics */
+            font-style: normal;
             font-size: 10px;
             margin-bottom: 5px;
         }
 
         .job-responsibilities {
-            list-style-type: disc; /* Use a simple disc for bullet points */
+            list-style-type: disc;
             margin-left: 15px;
             font-size: 10px;
         }
@@ -192,6 +191,9 @@
             background: #333;
         }
 
+        /* * PDF-Specific Adjustments for A4 
+        * This ensures the container stretches appropriately in the print context.
+        */
         @media print {
             .download-btn {
                 display: none;
@@ -201,8 +203,18 @@
             }
             .cv-container {
                 box-shadow: none;
-                max-width: 100%;
+                /* Max width set to A4 width minus margins (210mm wide) */
+                max-width: 190mm; 
+                margin: 0 auto; /* Center it */
+            }
+            /* Reset side margins for main structure in print view to avoid double margins */
+            .header-section, .cv-body {
                 margin: 0;
+                border-left: none;
+                border-right: none;
+            }
+            .header-section {
+                border-top: none; /* Let the margin handle the top space */
             }
         }
     </style>
@@ -318,7 +330,7 @@
                     
                     <div class="job">
                         <div class="job-heading">
-                            <span class="job-role">Cashier, Fast Ark company</span>
+                            <span class="job-role">Cashier, Fast Ark Company</span>
                         </div>
                         <div class="job-date">Jan 2016 — Aug 2016</div>
                         <ul class="job-responsibilities">
@@ -355,14 +367,19 @@
             const element = document.querySelector('.cv-container');
             
             const options = {
-                margin: 10,
+                // Set page margins to 10mm on all sides
+                margin: 10, 
                 filename: 'ADEWALE_ISREAL_JAYEOLA_CV.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2 },
-                jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+                jsPDF: { 
+                    orientation: 'portrait', 
+                    unit: 'mm', 
+                    // Explicitly setting the page format to A4
+                    format: 'a4' 
+                }
             };
 
-            // Use the PDF library to generate and save the file
             html2pdf().set(options).from(element).save();
         }
     </script>
