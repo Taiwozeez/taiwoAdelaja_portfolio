@@ -2,66 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    color: #1f2937;
-    line-height: 1.5;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-.cv-container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
 }
 
-/* Header */
-.cv-header {
-    border-bottom: 1px solid #e5e7eb;
-    padding: 2rem 1.5rem;
+.cv-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-@media (min-width: 768px) {
-    .cv-header {
+@media (min-width: 992px) {
+    .cv-wrapper {
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem 3rem;
     }
 }
 
-.cv-header h1 {
-    font-size: 2.25rem;
-    font-weight: bold;
-    letter-spacing: -0.025em;
+/* Header Styles */
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid #3498db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-@media (min-width: 768px) {
-    .cv-header h1 {
-        font-size: 3rem;
-    }
+.header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
 }
 
 .download-btn {
-    padding: 0.5rem 1.5rem;
-    background-color: #111827;
+    background: #3498db;
     color: white;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    font-size: 0.875rem;
     border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
     cursor: pointer;
-    white-space: nowrap;
-    transition: background-color 0.2s;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .download-btn:hover {
-    background-color: #374151;
+    background: #2980b9;
 }
 
 /* Main Content Layout */
@@ -70,105 +75,108 @@ body {
     flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .cv-content {
         flex-direction: row;
     }
 }
 
-/* Sidebar */
+/* Sidebar Styles */
 .sidebar {
     width: 100%;
-    background-color: #f9fafb;
-    border-right: 1px solid #e5e7eb;
-    padding: 1.5rem;
+    background: #f8f9fa;
+    padding: 30px;
+    border-right: 1px solid #eaeaea;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .sidebar {
-        width: 20rem;
-        padding: 2rem;
+        width: 35%;
+        max-width: 350px;
     }
 }
 
 .section {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
 .section-title {
-    font-size: 0.75rem;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    color: #374151;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    letter-spacing: 1px;
 }
 
 /* Details Section */
 .details {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    font-size: 0.875rem;
+    gap: 15px;
 }
 
 .detail-item .detail-label {
     font-weight: 600;
-    color: #111827;
-    margin-bottom: 0.25rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
 }
 
 .detail-item .detail-value {
-    color: #6b7280;
-}
-
-.detail-item .detail-value:first-of-type {
-    line-height: 1.625;
+    color: #555;
+    font-size: 0.95rem;
 }
 
 /* Skills and Hobbies Lists */
 .skills-list, .hobbies-list {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    color: #6b7280;
 }
 
-/* Main Content */
+.skills-list li, .hobbies-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    position: relative;
+    padding-left: 15px;
+}
+
+.skills-list li:before, .hobbies-list li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+/* Main Content Styles */
 .main-content {
     flex: 1;
-    padding: 1.5rem;
+    padding: 30px;
 }
 
-@media (min-width: 768px) {
-    .main-content {
-        padding: 2rem 3rem;
-    }
-}
-
-/* Profile Section */
 .profile-text {
-    color: #6b7280;
-    line-height: 1.625;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 /* Employment History */
 .employment-history {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 25px;
 }
 
 .job {
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 .job-header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -181,47 +189,59 @@ body {
 
 .job-title {
     font-weight: 600;
-    color: #111827;
+    color: #2c3e50;
+    font-size: 1.1rem;
 }
 
 .job-date {
-    font-size: 0.875rem;
-    color: #6b7280;
+    color: #3498db;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 5px;
 }
 
 @media (min-width: 768px) {
     .job-date {
-        text-align: right;
+        margin-top: 0;
     }
 }
 
 .job-subtitle {
-    font-size: 0.75rem;
     font-weight: 600;
-    color: #374151;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    margin: 10px 0 5px;
+    font-size: 0.95rem;
 }
 
 .job-responsibilities {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    font-size: 0.875rem;
-    color: #374151;
-    margin-left: 1rem;
+    margin-left: 15px;
+}
+
+.job-responsibilities li {
+    padding: 5px 0;
+    color: #555;
+    position: relative;
+    padding-left: 15px;
+}
+
+.job-responsibilities li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
 }
 
 /* Education Section */
 .education-history {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 20px;
 }
 
 .education-item {
-    margin-bottom: 0.5rem;
+    margin-bottom: 15px;
 }
 
 .education-header {
@@ -239,22 +259,70 @@ body {
 
 .education-title {
     font-weight: 600;
-    color: #111827;
+    color: #2c3e50;
+    font-size: 1rem;
 }
 
 .education-date {
-    font-size: 0.875rem;
-    color: #6b7280;
+    color: #3498db;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
 
 @media (min-width: 768px) {
     .education-date {
-        text-align: right;
+        margin-top: 0;
     }
+}
+
+/* Leadership Activities */
+.leadership-activities {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leadership-item {
+    margin-bottom: 20px;
+}
+
+.leadership-title {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.leadership-subtitle {
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 10px 0 5px;
+    font-size: 0.95rem;
+}
+
+.leadership-responsibilities {
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+.leadership-responsibilities li {
+    padding: 5px 0;
+    color: #555;
+    position: relative;
+    padding-left: 15px;
+}
+
+.leadership-responsibilities li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
 }
 
 /* References Section */
 .references-text {
-    font-size: 0.875rem;
-    color: #6b7280;
+    color: #555;
+    font-style: italic;
 }
