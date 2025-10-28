@@ -17,13 +17,14 @@
             background-color: #ffffff;
             color: #333;
             line-height: 1.4;
-            padding: 20px;
+            padding: 0; /* Removing padding from body to start content right at the top */
         }
 
         /* Main CV Container */
         .cv-container {
-            max-width: 800px;
-            margin: 0 auto;
+            /* Max width for viewing on screen */
+            max-width: 800px; 
+            margin: 20px auto; /* 20px top/bottom margin for screen view */
             background: white;
             padding: 0;
             display: flex;
@@ -35,14 +36,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px 0 20px 0;
+            padding: 20px 0;
             border: 1px solid #000;
             border-bottom: none;
             margin: 0 20px;
         }
 
         .header-section h1 {
-            font-size: 18px;
+            font-size: 20px; /* Slightly increased size */
             font-weight: bold;
             letter-spacing: 2px;
         }
@@ -57,21 +58,19 @@
 
         .left-column {
             width: 30%;
-            padding: 20px;
-            padding-right: 15px;
+            padding: 20px 15px 20px 20px;
             border-right: 1px solid #000;
             background-color: #fff;
         }
 
         .right-column {
             width: 70%;
-            padding: 20px;
-            padding-left: 15px;
+            padding: 20px 20px 20px 15px;
         }
 
         /* Section Titles */
         .section-title {
-            font-size: 12px;
+            font-size: 14px; /* Increased from 12px */
             font-weight: bold;
             margin: 0 0 10px 0;
             color: #000;
@@ -82,8 +81,8 @@
 
         /* Details Section (Left) */
         .details-item {
-            margin-bottom: 5px;
-            font-size: 10px;
+            margin-bottom: 8px; /* Increased margin */
+            font-size: 12px; /* Increased from 10px */
         }
 
         .detail-label {
@@ -99,79 +98,58 @@
 
         /* Skills/Hobbies (Left) */
         .section {
-            margin-bottom: 15px;
+            margin-bottom: 20px; /* Increased space between sections */
         }
 
         .skills-list, .hobbies-list {
             list-style-type: none;
             padding-left: 0;
-            font-size: 10px;
+            font-size: 12px; /* Increased from 10px */
         }
 
         .skills-list li, .hobbies-list li {
-            padding: 2px 0;
+            padding: 3px 0;
             color: #555;
         }
 
         /* Profile Section (Right) */
         .profile-text {
             color: #555;
-            font-size: 12px;
-            margin-bottom: 20px;
+            font-size: 13px; /* Increased from 12px */
+            margin-bottom: 25px;
+            line-height: 1.5; /* Better line spacing */
         }
 
         /* Employment History (Right) */
         .job {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
-        .job-title {
+        .job-role {
             font-weight: bold;
+            font-size: 13px; /* Increased from 12px */
             color: #000;
-            font-size: 12px;
-        }
-        
-        /* Company Name (Bolded and in the same line as title on image) - I'll modify the HTML for this */
-        .company-name {
-            font-weight: normal;
-            font-size: 12px;
         }
 
         .job-date {
             color: #555;
             font-style: normal;
-            font-size: 10px;
+            font-size: 11px; /* Increased from 10px */
             margin-bottom: 5px;
         }
 
         .job-responsibilities {
             list-style-type: disc;
-            margin-left: 15px;
-            font-size: 10px;
+            margin-left: 18px; /* Slightly more indent */
+            font-size: 11px; /* Increased from 10px */
         }
 
         .job-responsibilities li {
-            padding: 2px 0;
+            padding: 3px 0;
             color: #555;
         }
         
-        /* New styling for Job 1 to match image format: "Role, Company (Location)" */
-        .job-heading {
-            margin-bottom: 5px;
-        }
-
-        .job-role {
-            font-weight: bold;
-            font-size: 12px;
-            color: #000;
-        }
-        
-        .job-company, .job-location {
-            font-weight: normal;
-            font-size: 10px;
-        }
-
-        /* Download Button - kept for functionality but hidden for clean print/PDF */
+        /* Download Button */
         .download-btn {
             background: #4a4a4a;
             color: white;
@@ -191,9 +169,7 @@
             background: #333;
         }
 
-        /* * PDF-Specific Adjustments for A4 
-        * This ensures the container stretches appropriately in the print context.
-        */
+        /* PDF-Specific Adjustments for A4 */
         @media print {
             .download-btn {
                 display: none;
@@ -203,18 +179,15 @@
             }
             .cv-container {
                 box-shadow: none;
-                /* Max width set to A4 width minus margins (210mm wide) */
+                /* Set max-width close to A4 size to prevent content sinking */
                 max-width: 190mm; 
-                margin: 0 auto; /* Center it */
+                margin: 0 auto; /* Remove the top margin for screen viewing */
             }
-            /* Reset side margins for main structure in print view to avoid double margins */
+            /* Remove margins from inner sections in print view to avoid extra space */
             .header-section, .cv-body {
                 margin: 0;
                 border-left: none;
                 border-right: none;
-            }
-            .header-section {
-                border-top: none; /* Let the margin handle the top space */
             }
         }
     </style>
