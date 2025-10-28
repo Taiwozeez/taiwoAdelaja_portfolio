@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adewale Isreal Jayeola - Resume</title>
+    <title>ADELAJA Hafeez Kehinde - Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <style>
@@ -97,9 +97,6 @@
             font-size: 12px;
             color: #666;
         }
-        .leadership-item {
-            margin-bottom: 15px;
-        }
         .download-btn {
             position: absolute;
             top: 20px;
@@ -115,14 +112,19 @@
         .download-btn:hover {
             background-color: #333;
         }
+        
+        /* Class to hide elements in PDF */
+        .no-print {
+            /* This class will be used to hide elements in PDF */
+        }
     </style>
 </head>
 <body>
     <div class="resume-container">
         <!-- Header -->
         <div class="header-box">
-            <h1>ADEWALE ISREAL<br>JAYEOLA</h1>
-            <!-- <button class="download-btn" onclick="downloadPDF()">DOWNLOAD PDF</button> -->
+            <h1>ADELAJA HAFEEZ<br>KEHINDE</h1>
+            <button class="download-btn no-print" onclick="downloadPDF()">DOWNLOAD PDF</button>
         </div>
 
         <!-- Main Content -->
@@ -131,134 +133,105 @@
             <div class="left-column w-1/4 px-6 py-4 border-r border-gray-300">
                 <div class="section-title">DETAILS</div>
                 <p><strong>ADDRESS</strong></p>
-                <p>39 Jubril Shittu street,<br>Asolo bus stop, Agric<br>Ikorodu, Lagos</p>
+                <p>2, Oguntiroti Street,<br>Alapere-Ketu,<br>Lagos State</p>
                 
                 <p style="margin-top: 12px;"><strong>PHONE</strong></p>
-                <p>08060536025</p>
+                <p>08036004895</p>
                 
                 <p style="margin-top: 12px;"><strong>EMAIL</strong></p>
-                <p>walejay4real3000@<br>gmail.com</p>
+                <p>hafeezkehindeadelaja@<br>gmail.com</p>
                 
                 <p style="margin-top: 12px;"><strong>NATIONALITY</strong></p>
                 <p>Nigerian</p>
 
                 <div class="section-title" style="margin-top: 20px;">CORE SKILLS</div>
-                <div class="skill-item">Customer Relationship Management</div>
-                <div class="skill-item">Communication & Interpersonal Skills</div>
-                <div class="skill-item">Conflict Resolution</div>
-                <div class="skill-item">Team Collaboration</div>
-                <div class="skill-item">Effective Time Management</div>
-                <div class="skill-item">Decision Making</div>
-                <div class="skill-item">Negotiation & Persuasion</div>
-                <div class="skill-item">Creative Problem Solving</div>
-                <div class="skill-item">Flexibility & Adaptability</div>
-                <div class="skill-item">Active Listening</div>
-                <div class="skill-item">Critical Thinking</div>
-                <div class="skill-item">Power BI (Beginner)</div>
+                <div class="skill-item">Frontend Development (HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS)</div>
+                <div class="skill-item">UI/UX Design & Usability Testing</div>
+                <div class="skill-item">Microsoft Office Suite (Word, Excel, PowerPoint)</div>
+                <div class="skill-item">Soft Skills</div>
+                <div class="skill-item">Written & Verbal Communication</div>
+                <div class="skill-item">Public Policy Analysis</div>
+                <div class="skill-item">Customer Service & Relationship Management</div>
+                <div class="skill-item">Leadership & Team Collaboration</div>
 
-                <div class="section-title" style="margin-top: 20px;">HOBBIES</div>
-                <div class="skill-item">Singing</div>
-                <div class="skill-item">Reading</div>
-                <div class="skill-item">Adventure</div>
+                <div class="section-title" style="margin-top: 20px;">EDUCATION</div>
+                
+                <div class="education-item">
+                    <div class="education-title">B.Sc. Business Administration</div>
+                    <div class="education-info">University of Lagos, Akoka</div>
+                    <div class="education-info">2012 — 2017</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-title">Senior Secondary School Certificate</div>
+                    <div class="education-info">S & J College, Ketu</div>
+                    <div class="education-info">2002 — 2008</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-title">First School Leaving Certificate</div>
+                    <div class="education-info">Kosy Bethel Primary School, Ilupéju</div>
+                    <div class="education-info">1996 — 2001</div>
+                </div>
+
+                <div class="section-title" style="margin-top: 20px;">REFERENCES</div>
+                <p class="skill-item">Available upon request.</p>
             </div>
 
             <!-- Right Content -->
             <div class="right-column w-3/4 px-6 py-4">
-                <div class="section-title">PROFILE</div>
-                <p class="profile-text">Customer-focused professional with strong multitasking abilities and a passion for enhancing customer experience. Skilled at building relationships, improving engagement, and supporting operational success. Driven by results, reliability and a commitment to excellent service delivery.</p>
+                <div class="section-title">PROFESSIONAL PROFILE</div>
+                <p class="profile-text">Proactive and articulate professional with a strong foundation in Business Administration and Software Engineering. Specialized in Frontend Web Development and UI/UX Design, with a proven ability to create user-centered digital solutions that enhance user experience and drive operational efficiency. Adept in team collaboration, problem-solving, and delivering impactful results in dynamic work environments.</p>
 
-                <div class="section-title" style="margin-top: 25px;">EMPLOYMENT HISTORY</div>
+                <div class="section-title" style="margin-top: 25px;">PROFESSIONAL EXPERIENCE</div>
 
-                <div class="job-title">Call Center Agent, Sunking / Greenlight Planet</div>
-                <div class="company-info">March 2022 — Present</div>
-                <div class="job-location">Lagos State</div>
+                <div class="job-title">Administrative Officer, Denukan Network Limited</div>
+                <div class="company-info">Feb 2024 – Present</div>
+                <div class="job-location">Ogudu, Lagos</div>
                 <ul class="job-responsibilities">
-                    <li>Resolved customer concerns and improved satisfaction for Solar Home System users</li>
-                    <li>Educated customers on financing plans and product usage</li>
-                    <li>Assisted with overdue account recovery and follow up</li>
-                    <li>Logged interactions accurately using CRM tools</li>
+                    <li>Coordinating daily administrative operations to ensure smooth business processes</li>
+                    <li>Managing documentation, scheduling, and correspondence for improved efficiency</li>
+                    <li>Maintaining office facilities and ensuring a clean, organized, and functional work environment</li>
+                    <li>Supporting department heads in planning, budgeting, and reporting tasks</li>
                 </ul>
 
-                <div class="job-title">Collection Officer, XGO Finance Limited (Xcredit)</div>
-                <div class="company-info">Aug 2020 — Mar 2022</div>
-                <div class="job-location">Lagos State</div>
+                <div class="job-title">Frontend Developer & UI/UX Designer, The Casual Tech Company</div>
+                <div class="company-info">June 2024 – Nov 2024</div>
+                <div class="job-location">Surulere, Lagos</div>
                 <ul class="job-responsibilities">
-                    <li>Ensured timely loan repayments through outbound communication</li>
-                    <li>Assisted customers facing payment issues or account access challenges</li>
-                    <li>Maintained proper documentation and escalated high-risk cases</li>
-                    <li>Delivered service support and helpful guidance</li>
+                    <li>Built responsive web applications using HTML, CSS, JavaScript, React.js, and Next.js</li>
+                    <li>Designed and implemented intuitive UI/UX experiences, increasing user engagement</li>
+                    <li>Conducted user research and usability testing to inform design improvements</li>
+                    <li>Styled web components consistently using Tailwind CSS</li>
+                    <li>Collaborated with developers and designers to meet project goals on time</li>
                 </ul>
 
-                <div class="job-title">Collection Officer, Blue Ridge Microfinance Bank (OKASH)</div>
-                <div class="company-info">Jan 2020 — Jun 2020</div>
-                <div class="job-location">Lagos State</div>
+                <div class="job-title">Customer Service Representative, Sahesth Ventures</div>
+                <div class="company-info">Dec 2021 – Jan 2024</div>
+                <div class="job-location">Ketu, Lagos</div>
                 <ul class="job-responsibilities">
-                    <li>Supported customers with service access and usage assistance</li>
-                    <li>Provided helpful recommendations on available services</li>
-                    <li>Handled complaints and issues to maintain customer satisfaction</li>
+                    <li>Educated customers on company products and services to ensure informed decision-making</li>
+                    <li>Maintained accurate and up-to-date customer records following operational procedures</li>
+                    <li>Resolved customer inquiries and complaints to ensure satisfaction and loyalty</li>
                 </ul>
 
-                <div class="job-title">Teacher (NYSC), Giver's International School, Ikang Bakassi</div>
-                <div class="company-info">Oct 2018 — Oct 2019</div>
-                <div class="job-location">Cross River State</div>
+                <div class="job-title">Customer Service Representative, Opay Nigeria</div>
+                <div class="company-info">Dec 2019 – July 2021</div>
+                <div class="job-location">Ikeja, Lagos</div>
                 <ul class="job-responsibilities">
-                    <li>Designed and implemented engaging teaching materials</li>
-                    <li>Prepared weekly lesson plans and classroom systems</li>
-                    <li>Reinforced learning standards and classroom culture</li>
+                    <li>Handled over 100 customer inquiries weekly through phone and email</li>
+                    <li>Resolved technical and service-related complaints with a high satisfaction rate</li>
+                    <li>Co-developed an improved complaint resolution system that reduced repeat issues</li>
                 </ul>
 
-                <div class="job-title">Cashier, Fast Ark Company</div>
-                <div class="company-info">Jan 2016 — Aug 2016</div>
-                <div class="job-location">Lagos State</div>
+                <div class="job-title">Sales Representative, Power Holding Company of Nigeria (PHCN)</div>
+                <div class="company-info">Apr 2011 – Apr 2017</div>
+                <div class="job-location">Lagos</div>
                 <ul class="job-responsibilities">
-                    <li>Managed daily transactions and reconciled cash records</li>
-                    <li>Processed payments and issued receipts, refunds or tickets</li>
-                    <li>Assisted customers and resolved concerns</li>
+                    <li>Conducted interviews and gathered insights for promotional and public awareness campaigns</li>
+                    <li>Created effective content for public relations during crises to maintain reputation</li>
+                    <li>Collaborated with internal teams to communicate project updates and milestones</li>
                 </ul>
-
-                <div class="job-title">Barman, Super Park Hotel & Suite</div>
-                <div class="company-info">Feb 2015 — Nov 2015</div>
-                <div class="job-location">Lagos State</div>
-                <ul class="job-responsibilities">
-                    <li>Prepared and served drinks while maintaining customer satisfaction</li>
-                    <li>Recommended beverages based on customer preferences</li>
-                </ul>
-
-                <div class="section-title" style="margin-top: 25px;">EDUCATION</div>
-                
-                <div class="education-item">
-                    <div class="education-title">HND, Accounting</div>
-                    <div class="education-info">Gateway Polytechnic ICT, Ogun State</div>
-                    <div class="education-info">Sep 2016 — May 2018</div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="education-title">OND, Accounting</div>
-                    <div class="education-info">Moshood Abiola Polytechnic, Ogun State</div>
-                    <div class="education-info">Oct 2012 — Aug 2014</div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="education-title">SSCE</div>
-                    <div class="education-info">Obokun High School, Osun State</div>
-                    <div class="education-info">Oct 2002 — Jun 2008</div>
-                </div>
-
-                <div class="section-title" style="margin-top: 25px;">LEADERSHIP EXPERIENCE</div>
-                
-                <div class="leadership-item">
-                    <div class="education-title">FOIA CDS President (NYSC)</div>
-                    <div class="education-title">Senior Secondary School Class Representative</div>
-                    <div class="education-info">Key Contributions:</div>
-                    <ul class="job-responsibilities">
-                        <li>Coordinated meetings and shared key updates</li>
-                        <li>Led community sensitization initiatives</li>
-                        <li>Maintained CDS constitutional guidelines</li>
-                    </ul>
-                </div>
-
-                <div class="section-title" style="margin-top: 25px;">REFERENCES</div>
-                <p class="profile-text">Available upon request.</p>
             </div>
         </div>
     </div>
@@ -266,15 +239,23 @@
     <script>
         function downloadPDF() {
             const element = document.querySelector('.resume-container');
+            
+            // Hide the download button before generating PDF
+            const downloadBtn = document.querySelector('.download-btn');
+            downloadBtn.style.display = 'none';
+            
             const options = {
                 margin: 10,
-                filename: 'Adewale_Isreal_Jayeola_Resume.pdf',
+                filename: 'ADELAJA_Hafeez_Kehinde_Resume.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
             
-            html2pdf().set(options).from(element).save();
+            html2pdf().set(options).from(element).save().then(() => {
+                // Show the download button again after PDF generation is complete
+                downloadBtn.style.display = 'block';
+            });
         }
     </script>
 </body>
