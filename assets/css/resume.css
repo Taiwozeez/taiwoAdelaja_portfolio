@@ -6,73 +6,80 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #fff;
   color: #000;
+  background: #fff;
 }
 
 #cv-content {
   width: 210mm;
   min-height: 297mm;
-  padding-bottom: 20mm;
   margin: auto;
+  padding-bottom: 20mm;
   background: #fff;
 }
 
 header {
   text-align: center;
-  padding: 22px 0;
   border-bottom: 1px solid #000;
+  padding: 20px 0;
   position: relative;
 }
 
 .name-top {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 700;
 }
 
 .name-bottom {
-  font-size: 35px;
+  font-size: 34px;
   font-weight: 700;
 }
 
 header h1 {
   border: 3px solid #000;
-  padding: 15px 45px;
-  line-height: 135%;
+  padding: 14px 40px;
+  line-height: 130%;
   display: inline-block;
 }
 
 header button {
   position: absolute;
-  right: 24px;
-  top: 24px;
-  padding: 10px 20px;
+  right: 25px;
+  top: 25px;
+  padding: 9px 18px;
   font-size: 13px;
-  color: #fff;
   background: #000;
-  border-radius: 6px;
+  color: #fff;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.container {
-  display: flex;
+header button:hover {
+  opacity: .8;
 }
 
+/* Layout */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
 aside {
   width: 32%;
-  padding: 25px 20px;
-  border-right: 1px solid #ccc;
+  padding: 22px;
+  border-right: 1px solid #ddd;
 }
 
 .section-title {
   font-size: 12px;
-  font-weight: 700;
   text-transform: uppercase;
-  margin-top: 18px; /* Reduced from 26px */
-  margin-bottom: 4px; /* Tighter */
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 6px;
 }
-
 
 .label {
   font-size: 11px;
@@ -80,75 +87,73 @@ aside {
 }
 
 .value {
-  font-size: 10.5px;
+  font-size: 11px;
   line-height: 1.3rem;
-}
-
-.list {
-  font-size: 10.5px;
-  margin-left: 18px;
   margin-bottom: 10px;
 }
 
+/* Right Content */
 .content {
   width: 68%;
-  padding: 25px 35px;
+  padding: 24px 34px;
 }
 
 .line {
   border-bottom: 2px solid #000;
-  margin-bottom: 12px;
   padding-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .text {
   font-size: 11px;
-  line-height: 1.42;
-  margin-bottom: 10px; /* Tighter block spacing */
+  line-height: 1.45rem;
+  margin-bottom: 10px;
 }
 
-.job,
-.edu {
-  margin-bottom: 10px; /* Reduced from 16px */
+.job, .edu {
+  margin-bottom: 18px;
 }
-
 
 .job h3, .edu h3 {
   font-size: 12px;
   font-weight: 600;
 }
 
-.state {
+.meta {
   font-size: 10px;
-  opacity: .7;
   display: block;
-  margin-top: 0;
-  font-weight: 500;
 }
 
-
 .date {
-  font-size: 10px;
-  opacity: .7;
-  display: block;
-  margin: 3px 0 6px;
+  opacity: .8;
+  margin-bottom: 6px;
+}
+
+.loc {
+  text-align: right;
+  font-weight: 500;
+  margin-bottom: 2px;
 }
 
 .subtitle {
   font-size: 11px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   text-transform: uppercase;
 }
 
-/* Force clean A4 breaks */
-.page-break {
-  page-break-before: always;
+.list.text li {
+  font-size: 11px;
+  margin-bottom: 6px;
 }
 
-/* Print Mode */
+/* PDF / PRINT MODE */
 @media print {
   header button {
     display: none !important;
+    visibility: hidden !important;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
   }
 }
