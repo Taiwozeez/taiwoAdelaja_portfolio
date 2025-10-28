@@ -69,9 +69,10 @@ aside {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 15px 0 8px;
-  letter-spacing: 1px;
+  margin-top: 18px; /* Reduced from 26px */
+  margin-bottom: 4px; /* Tighter */
 }
+
 
 .label {
   font-size: 11px;
@@ -102,13 +103,15 @@ aside {
 
 .text {
   font-size: 11px;
-  line-height: 1.45rem;
-  margin-bottom: 10px;
+  line-height: 1.42;
+  margin-bottom: 10px; /* Tighter block spacing */
 }
 
-.job, .edu {
-  margin-bottom: 20px;
+.job,
+.edu {
+  margin-bottom: 10px; /* Reduced from 16px */
 }
+
 
 .job h3, .edu h3 {
   font-size: 12px;
