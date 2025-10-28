@@ -17,14 +17,13 @@
             background-color: #ffffff;
             color: #333;
             line-height: 1.4;
-            padding: 0; /* Removing padding from body to start content right at the top */
+            padding: 0;
         }
 
         /* Main CV Container */
         .cv-container {
-            /* Max width for viewing on screen */
             max-width: 800px; 
-            margin: 20px auto; /* 20px top/bottom margin for screen view */
+            margin: 20px auto; 
             background: white;
             padding: 0;
             display: flex;
@@ -43,7 +42,7 @@
         }
 
         .header-section h1 {
-            font-size: 20px; /* Slightly increased size */
+            font-size: 20px;
             font-weight: bold;
             letter-spacing: 2px;
         }
@@ -70,7 +69,7 @@
 
         /* Section Titles */
         .section-title {
-            font-size: 14px; /* Increased from 12px */
+            font-size: 14px;
             font-weight: bold;
             margin: 0 0 10px 0;
             color: #000;
@@ -81,8 +80,8 @@
 
         /* Details Section (Left) */
         .details-item {
-            margin-bottom: 8px; /* Increased margin */
-            font-size: 12px; /* Increased from 10px */
+            margin-bottom: 8px;
+            font-size: 12px;
         }
 
         .detail-label {
@@ -98,13 +97,13 @@
 
         /* Skills/Hobbies (Left) */
         .section {
-            margin-bottom: 20px; /* Increased space between sections */
+            margin-bottom: 20px;
         }
 
         .skills-list, .hobbies-list {
             list-style-type: none;
             padding-left: 0;
-            font-size: 12px; /* Increased from 10px */
+            font-size: 12px;
         }
 
         .skills-list li, .hobbies-list li {
@@ -115,9 +114,9 @@
         /* Profile Section (Right) */
         .profile-text {
             color: #555;
-            font-size: 13px; /* Increased from 12px */
+            font-size: 13px;
             margin-bottom: 25px;
-            line-height: 1.5; /* Better line spacing */
+            line-height: 1.5;
         }
 
         /* Employment History (Right) */
@@ -127,28 +126,68 @@
 
         .job-role {
             font-weight: bold;
-            font-size: 13px; /* Increased from 12px */
+            font-size: 13px;
             color: #000;
         }
 
         .job-date {
             color: #555;
             font-style: normal;
-            font-size: 11px; /* Increased from 10px */
+            font-size: 11px;
             margin-bottom: 5px;
         }
 
         .job-responsibilities {
             list-style-type: disc;
-            margin-left: 18px; /* Slightly more indent */
-            font-size: 11px; /* Increased from 10px */
+            margin-left: 18px;
+            font-size: 11px;
         }
 
         .job-responsibilities li {
             padding: 3px 0;
             color: #555;
         }
+
+        /* Education, Leadership, References */
+        .education-item, .activity-item, .reference-item {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .education-degree, .activity-title {
+            font-weight: bold;
+            color: #000;
+            font-size: 13px;
+        }
+
+        .education-institution, .education-duration {
+            font-size: 11px;
+            color: #555;
+        }
+
+        .education-location {
+            font-size: 11px;
+            color: #555;
+            float: right; /* To align location to the right */
+        }
         
+        .activity-responsibilities {
+            list-style-type: disc;
+            margin-left: 18px;
+            font-size: 11px;
+            margin-top: 5px;
+        }
+        .activity-responsibilities li {
+            padding: 2px 0;
+            color: #555;
+        }
+
+        .reference-text {
+            font-weight: bold;
+            font-size: 13px;
+            color: #000;
+        }
+
         /* Download Button */
         .download-btn {
             background: #4a4a4a;
@@ -179,11 +218,9 @@
             }
             .cv-container {
                 box-shadow: none;
-                /* Set max-width close to A4 size to prevent content sinking */
                 max-width: 190mm; 
-                margin: 0 auto; /* Remove the top margin for screen viewing */
+                margin: 0 auto; 
             }
-            /* Remove margins from inner sections in print view to avoid extra space */
             .header-section, .cv-body {
                 margin: 0;
                 border-left: none;
@@ -328,6 +365,54 @@
                     </div>
 
                 </div>
+
+                <div class="section">
+                    <h2 class="section-title">EDUCATION</h2>
+                    
+                    <div class="education-item">
+                        <span class="education-degree">HND, Accounting</span>, <span class="education-institution">Gateway Polytechnic ICT</span>
+                        <span class="education-location">Ogun State</span>
+                        <div class="education-duration">Sep 2016 — May 2018</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <span class="education-degree">OND, Accounting</span>, <span class="education-institution">Moshood Abiola Polytechnic</span>
+                        <span class="education-location">Ogun State</span>
+                        <div class="education-duration">Oct 2012 — Aug 2014</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <span class="education-degree">Senior School Certificate Examination (SSCE)</span>, <span class="education-institution">Obokun High School, Okesha Ilesha</span>
+                        <span class="education-location">Osun State</span>
+                        <div class="education-duration">Oct 2002 — Jun 2008</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">LEADERSHIP ACTIVITIES</h2>
+                    
+                    <div class="activity-item">
+                        <div class="activity-title">1. FOIA CDS president</div>
+                        <div class="education-institution">Responsibilities:</div>
+                        <ul class="activity-responsibilities">
+                            <li>Conducted weekly CDS meeting with members</li>
+                            <li>Transmitted information from LGI to CDS members</li>
+                            <li>Led members for monthly sensitization</li>
+                            <li>Sensitized people and member of objectives of this particular CDS</li>
+                            <li>Kept CDSs constitution</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-title">2. Senior secondary school class Representative</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">REFERENCES</h2>
+                    <p class="reference-text">References available upon request</p>
+                </div>
+
             </div>
         </div>
         
@@ -340,7 +425,6 @@
             const element = document.querySelector('.cv-container');
             
             const options = {
-                // Set page margins to 10mm on all sides
                 margin: 10, 
                 filename: 'ADEWALE_ISREAL_JAYEOLA_CV.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
@@ -348,7 +432,6 @@
                 jsPDF: { 
                     orientation: 'portrait', 
                     unit: 'mm', 
-                    // Explicitly setting the page format to A4
                     format: 'a4' 
                 }
             };
