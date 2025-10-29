@@ -3,266 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADELAJA Hafeez Kehinde - Resume</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #f5f5f5;
-        }
-        .resume-container {
-            background: white;
-            max-width: 900px;
-            margin: 20px auto;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .header-box {
-            border: 2px solid #000;
-            padding: 30px;
-            text-align: center;
-            margin: 20px;
-            position: relative;
-        }
-        .header-box h1 {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            line-height: 1.4;
-        }
-        .section-title {
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 8px;
-        }
-        .left-column {
-            font-size: 12px;
-            line-height: 1.6;
-        }
-        .left-column p {
-            margin: 4px 0;
-        }
-        .skill-item {
-            margin: 6px 0;
-            color: #333;
-        }
-        .right-column {
-            font-size: 13px;
-            line-height: 1.6;
-            color: #333;
-        }
-        .job-title {
-            font-weight: 700;
-            margin-top: 12px;
-            margin-bottom: 4px;
-        }
-        .company-info {
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 4px;
-        }
-        .job-location {
-            font-size: 12px;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 8px;
-        }
-        .job-responsibilities {
-            margin-left: 20px;
-            margin-top: 8px;
-            font-size: 12px;
-        }
-        .job-responsibilities li {
-            margin: 4px 0;
-            list-style-type: disc;
-        }
-        .profile-text {
-            color: #333;
-            font-size: 13px;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        .education-item {
-            margin-bottom: 15px;
-        }
-        .education-title {
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-        .education-info {
-            font-size: 12px;
-            color: #666;
-        }
-        .download-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #000;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            font-size: 12px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .download-btn:hover {
-            background-color: #333;
-        }
-        
-        /* Class to hide elements in PDF */
-        .no-print {
-            /* This class will be used to hide elements in PDF */
-        }
-    </style>
+    <title>ADELAJA Hazeez Taiwo - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/assets/css/resume.css">
 </head>
 <body>
-    <div class="resume-container">
-        <!-- Header -->
-        <div class="header-box">
-            <h1>ADELAJA HAFEEZ<br>KEHINDE</h1>
-            <!-- <button class="download-btn no-print" onclick="downloadPDF()">DOWNLOAD PDF</button> -->
-        </div>
-
-        <!-- Main Content -->
-        <div class="flex">
-            <!-- Left Sidebar -->
-            <div class="left-column w-1/4 px-6 py-4 border-r border-gray-300">
-                <div class="section-title">DETAILS</div>
-                <p><strong>ADDRESS</strong></p>
-                <p>2, Oguntiroti Street,<br>Alapere-Ketu,<br>Lagos State</p>
-                
-                <p style="margin-top: 12px;"><strong>PHONE</strong></p>
-                <p>08036004895</p>
-                
-                <p style="margin-top: 12px;"><strong>EMAIL</strong></p>
-                <p>hafeezkehindeadelaja@<br>gmail.com</p>
-                
-                <p style="margin-top: 12px;"><strong>NATIONALITY</strong></p>
-                <p>Nigerian</p>
-
-                <div class="section-title" style="margin-top: 20px;">CORE SKILLS</div>
-                <div class="skill-item">Frontend Development (HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS)</div>
-                <div class="skill-item">Microsoft Office Suite (Word, Excel, PowerPoint)</div>
-                <div class="skill-item">Soft Skills</div>
-                <div class="skill-item">Written & Verbal Communication</div>
-                <div class="skill-item">Public Policy Analysis</div>
-                <div class="skill-item">Customer Service & Relationship Management</div>
-                <div class="skill-item">Leadership & Team Collaboration</div>
-
-                <div class="section-title" style="margin-top: 20px;">EDUCATION</div>
-                
-                <div class="education-item">
-                    <div class="education-title">B.Sc. Business Administration</div>
-                    <div class="education-info">University of Lagos, Akoka</div>
-                    <div class="education-info">2012 — 2017</div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="education-title">Senior Secondary School Certificate</div>
-                    <div class="education-info">S & J College, Ketu</div>
-                    <div class="education-info">2002 — 2008</div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="education-title">First School Leaving Certificate</div>
-                    <div class="education-info">Kosy Bethel Primary School, Ilupéju</div>
-                    <div class="education-info">1996 — 2001</div>
-                </div>
-
-                <div class="section-title" style="margin-top: 20px;">REFERENCES</div>
-                <p class="skill-item">Available upon request.</p>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>ADELAJA Hazeez Taiwo</h1>
+                <p>Email: adezeez@gmail.com</p>
+                 <!-- <p>Address: 2, Oguntiroti Street, Ketu-Alapere, Lagos State | Tel: 2348027723084</p>  -->
+                <p>GitHub: <a href="https://github.com/Taiwozeez" target="_blank">https://github.com/Taiwozeez</a></p>
             </div>
+        </header>
 
-            <!-- Right Content -->
-            <div class="right-column w-3/4 px-6 py-4">
-                <div class="section-title">PROFESSIONAL PROFILE</div>
-                <p class="profile-text">Proactive and articulate professional with a strong foundation in Business Administration and Software Engineering. Specialized in Frontend Web Development, with a proven ability to create user-centered digital solutions that enhance user experience and drive operational efficiency. Adept in team collaboration, problem-solving, and delivering impactful results in dynamic work environments.</p>
+        <div class="content">
+            <!-- Back Button at the Top -->
+            <a href="/index.html" class="back-button">Back</a>
 
-                <div class="section-title" style="margin-top: 25px;">PROFESSIONAL EXPERIENCE</div>
+            <section class="profile">
+                <div class="section-title">
+                    <h2>PROFESSIONAL SUMMARY</h2>
+                </div>
+                <p>Proactive Frontend Developer with expertise in HTML, CSS, JavaScript, TypeScript, React, React Native, Next.js, Vue.js, Tailwind CSS, and AWS Cloud(beginner level). Adept at creating responsive and user-friendly web applications and collaborating with cross-functional teams. Experienced in customer service and public administration, bringing a unique blend of technical and interpersonal skills to enhance organizational efficiency and user satisfaction. Eager to contribute to innovative projects in a challenging role.</p>
+            </section>
 
-                <div class="job-title">Customer Service Representative, GIG Logistics</div>
-                <div class="company-info">August 2025 – Present</div>
-                <div class="job-location">Gbagada, Lagos</div>
-                <ul class="job-responsibilities">
-                    <li>Providing excellent customer service and support for logistics operations</li>
-                    <li>Assisting customers with package tracking, delivery inquiries, and service information</li>
-                    <li>Resolving customer concerns and maintaining high satisfaction levels</li>
+            <section class="skills">
+                <div class="section-title">
+                    <h2>TECHNICAL SKILLS</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h3>Frontend Development</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>React Native</li>
+                            <li>Next.js</li>
+                            <li>Vue.js</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Node.js</li>
+                            <li>API Integration</li>
+                            <li>Excel</li>
+                            <li>CRMs</li>
+                            <li>AWS Cloud(beginner)</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Strong communication</li>
+                            <li>Teamwork</li>
+                            <li>Customer service expertise</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience">
+                <div class="section-title">
+                    <h2>WORK EXPERIENCE</h2>
+                </div>
+
+                <div class="job">
+                    <h3>Frontend Developer</h3>
+                    <span class="date">E-DoubleOne Inc | Feb 2025</span>
+                    <ul>
+                        <li>Built and maintained responsive applications with React, Next.js, and Tailwind CSS.</li>
+                        <li>Partnered with cross-functional teams to design and deliver scalable features aligned with project objectives.</li>
+                        <li>Enhanced application performance and reliability through thorough testing and debugging processes.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Software Developer</h3>
+                    <span class="date">Aricah Inc, Lagos | Oct 2024 – Jan 2025</span>
+                    <ul>
+                        <li>Developed and maintained responsive web applications using TailwindCss, Next.js and Typescript.</li>
+                        <li>Optimized page load speeds by improving code efficiency.</li>
+                        <li>Collaborated on the development of an AI web application for study and learning.</li>
+                        <li>Conducted testing and debugging to ensure reliable and scalable solutions for event ticket website projects.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Frontend Developer</h3>
+                    <span class="date">Bridging Innovation Tech Solutions, Lagos | May 2024 – Sep 2024</span>
+                    <ul>
+                        <li>Developed and maintained responsive web applications using React/Next.js, React Native and TypeScript.</li>
+                        <li>Collaborated with designers and developers to implement client-driven features.</li>
+                        <li>Optimized page load speeds by improving code efficiency.</li>
+                        <li>Conducted testing and debugging to ensure reliable and scalable solutions for event ticket website projects.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Customer Service Representative</h3>
+                    <span class="date">Sunking Solar/Greenlight Planet, Ikeja, Lagos | Dec 2021 – Present</span>
+                    <ul>
+                        <li>Resolved daily customer inquiries via phone, consistently exceeding performance benchmarks.</li>
+                        <li>Provided detailed product and service education, improving customer satisfaction and retention rates.</li>
+                        <li>Updated customer information in line with operational guidelines, ensuring accurate records.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Customer Service Representative</h3>
+                    <span class="date">XGO Finance LTD, Ikeja, Lagos | Aug 2020 – Dec 2021</span>
+                    <ul>
+                        <li>Contacted clients with past-due accounts to formulate payment plans.</li>
+                        <li>Negotiated effective payment arrangements, contributing to reduced delinquency rates.</li>
+                        <li>Handled high volumes of inbound and outbound calls to resolve account issues efficiently.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Customer Service Representative</h3>
+                    <span class="date">Opay Nigeria, Ikeja, Lagos | Dec 2019 – Jul 2020</span>
+                    <ul>
+                        <li>Communicated effectively with customers to resolve issues and ensure a positive customer experience.</li>
+                        <li>Resolved weekly customer inquiries via phone, consistently exceeding performance targets.</li>
+                        <li>Initiated the development of a system for managing unsatisfied customers, leading to improved engagement and cross-selling opportunities.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Public Relations Officer</h3>
+                    <span class="date">Ikeja Electric Distribution Company(Former PHCN), Lagos | Apr 2011 – Apr 2012</span>
+                    <ul>
+                        <li>Wrote engaging content for promotional campaigns and crisis responses to uphold organizational reputation.</li>
+                        <li>Collaborated with team members to communicate project milestones and foster community relations.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="projects">
+                <div class="section-title">
+                    <h2>PROJECTS</h2>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Event Ticket Website</h3>
+                    <ul>
+                        <li>Designed and developed a responsive travel website using Tailwind, React, and TypeScript.</li>
+                        <li>Collaborated with a team to implement secure payment gateways and optimize product display page.</li>
+                    </ul>
+                </div>
+                
+                <div class="project-item">
+                    <h3>E-Commerce Platform</h3>
+                    <ul>
+                        <li>Built an e-commerce front-end with JavaScript and Tailwind CSS, focusing on performance and usability.</li>
+                    </ul>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Online Course/Study Website and App</h3>
+                    <ul>
+                        <li>Developed an interactive and responsive online course website and mobile app using React Native, TypeScript, and APIs.</li>
+                        <li>Optimized the UI/UX for an engaging learning experience, ensuring smooth navigation and performance.</li>
+                        <li>Integrated third-party APIs for video streaming, quizzes, and progress tracking.</li>
+                        <li>Collaborated with a team to enhance accessibility and improve user engagement.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education">
+                <div class="section-title">
+                    <h2>EDUCATION</h2>
+                </div>
+                <div class="education-item">
+                    <h3>University of Lagos, Akoka</h3>
+                    <span class="date">2012 - 2017</span>
+                    <p>B.Sc. Public Administration</p>
+                </div>
+                <div class="education-item">
+                    <h3>Lagos State Polytechnic, Ikorodu</h3>
+                    <span class="date">2009 – 2011</span>
+                    <p>OND Mass Communication</p>
+                </div>
+            </section>
+
+            <section class="certifications">
+                <div class="section-title">
+                    <h2>CERTIFICATIONS & TRAINING</h2>
+                </div>
+                <ul class="cert-list">
+                    <li>Certified Software Engineering Program</li>
+                    <li>Certified Soft Skills Development Program</li>
                 </ul>
+            </section>
 
-                <div class="job-title">Administrative Officer, Denukan Network Limited</div>
-                <div class="company-info">December 2024 – August 2025</div>
-                <div class="job-location">Ogudu, Lagos</div>
-                <ul class="job-responsibilities">
-                    <li>Coordinating daily administrative operations to ensure smooth business processes</li>
-                    <li>Managing documentation, scheduling, and correspondence for improved efficiency</li>
-                    <li>Maintaining office facilities and ensuring a clean, organized, and functional work environment</li>
-                    <li>Supporting department heads in planning, budgeting, and reporting tasks</li>
-                </ul>
+            <section class="references">
+                <div class="section-title">
+                    <h2>REFERENCES</h2>
+                </div>
+                <p>Available upon request</p>
+            </section>
 
-                <div class="job-title">Frontend Developer, The Casual Tech Company</div>
-                <div class="company-info">June 2024 – November 2024</div>
-                <div class="job-location">Surulere, Lagos</div>
-                <ul class="job-responsibilities">
-                    <li>Built responsive web applications using HTML, CSS, JavaScript, React.js, and Next.js</li>
-                    <li>Styled web components consistently using Tailwind CSS</li>
-                    <li>Collaborated with developers and designers to meet project goals on time</li>
-                </ul>
-
-                <div class="job-title">Customer Service Representative, Sahesth Ventures</div>
-                <div class="company-info">December 2021 – November 2024</div>
-                <div class="job-location">Ketu, Lagos</div>
-                <ul class="job-responsibilities">
-                    <li>Educated customers on company products and services to ensure informed decision-making</li>
-                    <li>Maintained accurate and up-to-date customer records following operational procedures</li>
-                    <li>Resolved customer inquiries and complaints to ensure satisfaction and loyalty</li>
-                </ul>
-
-                <div class="job-title">Customer Service Representative, Opay Nigeria</div>
-                <div class="company-info">December 2019 – July 2021</div>
-                <div class="job-location">Ikeja, Lagos</div>
-                <ul class="job-responsibilities">
-                    <li>Handled over 100 customer inquiries weekly through phone and email</li>
-                    <li>Resolved technical and service-related complaints with a high satisfaction rate</li>
-                    <li>Co-developed an improved complaint resolution system that reduced repeat issues</li>
-                </ul>
-
-                <div class="job-title">Sales Representative, Power Holding Company of Nigeria (PHCN)</div>
-                <div class="company-info">April 2011 – April 2017</div>
-                <div class="job-location">Lagos</div>
-                <ul class="job-responsibilities">
-                    <li>Conducted interviews and gathered insights for promotional and public awareness campaigns</li>
-                    <li>Created effective content for public relations during crises to maintain reputation</li>
-                    <li>Collaborated with internal teams to communicate project updates and milestones</li>
-                </ul>
+            <!-- Back Button at the Bottom -->
+            <div class="buttons-container">
+                <a href="/index.html" class="back-button">Back</a>
+                <a href="javascript:window.print()" class="back-button">Print Resume</a>
             </div>
         </div>
     </div>
-
-    <script>
-        function downloadPDF() {
-            const element = document.querySelector('.resume-container');
-            
-            // Hide the download button before generating PDF
-            const downloadBtn = document.querySelector('.download-btn');
-            downloadBtn.style.display = 'none';
-            
-            const options = {
-                margin: 10,
-                filename: 'ADELAJA_Hafeez_Kehinde_Resume.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-            
-            html2pdf().set(options).from(element).save().then(() => {
-                // Show the download button again after PDF generation is complete
-                downloadBtn.style.display = 'block';
-            });
-        }
-    </script>
 </body>
 </html>
